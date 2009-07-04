@@ -1,7 +1,12 @@
 
 This is a demonstration of joining a class through a has_many table that has
-a polymorphic relationship.  The target base classes are specified, and the
-targeted subclasses are not specified.  
+a polymorphic relationship to two different STI tables.  The target base 
+classes are specified in the HMP definition, and the targeted subclasses 
+are not specified.  
 
 In this case, the HMP documentation claims you need to specify all the STI
-subclasses.  I'm not seeing that be true.  WTF?
+subclasses.  I'm not seeing that be true.  All the specs pass flying colors,
+so the docs are either wrong, misleading, or glossing over some very
+important details.
+
+help?
