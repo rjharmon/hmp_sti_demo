@@ -12,11 +12,12 @@ describe Slot do
   
   it "should allow lots of polymorphic slot items" do
     s = Factory(:slot)
-    s.slot_items << Factory(:content, :type => "ContentA")
-    s.slot_items << Factory(:content, :type => "ContentB")
-    s.slot_items << Factory(:design, :type => "DesignTypeA")
-    s.slot_items << Factory(:design, :type => "DesignTypeB")
-
+    s.slot_items << Factory(:content_a, :type => "ContentA")
+    s.slot_items << Factory(:content_b, :type => "ContentB")
+    s.slot_items << Factory(:design_a, :type => "DesignTypeA")
+    s.slot_items << Factory(:design_b, :type => "DesignTypeB")
+    debugger
+    
     s.save
 
     s.slot_items('reload').size.should == 4
