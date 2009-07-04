@@ -16,7 +16,6 @@ describe Slot do
     s.slot_items << Factory(:content_b, :type => "ContentB")
     s.slot_items << Factory(:design_a, :type => "DesignTypeA")
     s.slot_items << Factory(:design_b, :type => "DesignTypeB")
-    debugger
     
     s.save
 
@@ -25,6 +24,9 @@ describe Slot do
     s.slot_items[0].class.to_s.should == "ContentA"
     s.slot_items[1].class.to_s.should == "ContentB"
     s.slot_items[2].thingy.should == "typeA"
-    s.slot_items[3].thingy.should == "typeB"    
+    s.slot_items[3].thingy.should == "typeB"
+    4.times do |i|
+      s.slot_items[i].slots.should == [s]
+    end
   end
 end
