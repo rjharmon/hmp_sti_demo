@@ -1,0 +1,3131 @@
+** has_many_polymorphs: rails environment detected
+** has_many_polymorphs: loaded ok
+** has_many_polymorphs: autoload hook invoked
+** has_many_polymorphs: preloading parent model Slot
+** has_many_polymorphs: associating Slot.slot_items
+** has_many_polymorphs: Looks like your table doesn't exist for Content.
+Error Could not find table 'contents'
+Skipping...
+** has_many_polymorphs: Looks like your table doesn't exist for Design.
+Error Could not find table 'designs'
+Skipping...
+** has_many_polymorphs: Slot could not be preloaded: #<ActiveRecord::Associations::PolymorphicError: Could not find a valid class for :slot_items_slots (tried SlotItemsSlot). If it's namespaced, be sure to specify it as :"module/slot_items_slots" instead.>
+** has_many_polymorphs: autoload hook invoked
+** has_many_polymorphs: preloading parent model Slot
+** has_many_polymorphs: associating Slot.slot_items
+** has_many_polymorphs: Looks like your table doesn't exist for Content.
+Error Could not find table 'contents'
+Skipping...
+** has_many_polymorphs: Looks like your table doesn't exist for Design.
+Error Could not find table 'designs'
+Skipping...
+** has_many_polymorphs: rails environment detected
+** has_many_polymorphs: loaded ok
+** has_many_polymorphs: autoload hook invoked
+** has_many_polymorphs: preloading parent model Slot
+** has_many_polymorphs: associating Slot.slot_items
+** has_many_polymorphs: Looks like your table doesn't exist for Content.
+Error Could not find table 'contents'
+Skipping...
+** has_many_polymorphs: Looks like your table doesn't exist for Design.
+Error Could not find table 'designs'
+Skipping...
+** has_many_polymorphs: Looks like your table doesn't exist for SlotContent.
+Error Could not find table 'slot_contents'
+Skipping...
+** has_many_polymorphs: autoload hook invoked
+** has_many_polymorphs: preloading parent model Slot
+** has_many_polymorphs: rails environment detected
+** has_many_polymorphs: loaded ok
+** has_many_polymorphs: autoload hook invoked
+** has_many_polymorphs: preloading parent model Slot
+** has_many_polymorphs: associating Slot.slot_items
+** has_many_polymorphs: Looks like your table doesn't exist for Content.
+Error Could not find table 'contents'
+Skipping...
+** has_many_polymorphs: Looks like your table doesn't exist for Design.
+Error Could not find table 'designs'
+Skipping...
+** has_many_polymorphs: Looks like your table doesn't exist for SlotContent.
+Error Could not find table 'slot_contents'
+Skipping...
+** has_many_polymorphs: autoload hook invoked
+** has_many_polymorphs: preloading parent model Slot
+** has_many_polymorphs: rails environment detected
+** has_many_polymorphs: loaded ok
+** has_many_polymorphs: autoload hook invoked
+** has_many_polymorphs: preloading parent model Slot
+** has_many_polymorphs: associating Slot.slot_items
+** has_many_polymorphs: Looks like your table doesn't exist for Content.
+Error Could not find table 'contents'
+Skipping...
+** has_many_polymorphs: Looks like your table doesn't exist for Design.
+Error Could not find table 'designs'
+Skipping...
+** has_many_polymorphs: Looks like your table doesn't exist for SlotContent.
+Error Could not find table 'slot_contents'
+Skipping...
+** has_many_polymorphs: autoload hook invoked
+** has_many_polymorphs: preloading parent model Slot
+** has_many_polymorphs: rails environment detected
+** has_many_polymorphs: loaded ok
+** has_many_polymorphs: autoload hook invoked
+** has_many_polymorphs: preloading parent model Slot
+** has_many_polymorphs: associating Slot.slot_items
+** has_many_polymorphs: Looks like your table doesn't exist for Content.
+Error Could not find table 'contents'
+Skipping...
+** has_many_polymorphs: Looks like your table doesn't exist for Design.
+Error Could not find table 'designs'
+Skipping...
+** has_many_polymorphs: Looks like your table doesn't exist for SlotContent.
+Error Could not find table 'slot_contents'
+Skipping...
+** has_many_polymorphs: autoload hook invoked
+** has_many_polymorphs: preloading parent model Slot
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (273.0ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (1.9ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateSlot (1)
+  [4;36;1mSQL (0.7ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (2.3ms)[0m   [0mCREATE TABLE "slot" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (1.8ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('1')[0m
+Migrating to CreateContent (2)
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (1.9ms)[0m   [0;1mCREATE TABLE "content" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "Class" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (2.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('2')[0m
+Migrating to CreateDesign (3)
+  [4;36;1mSQL (0.5ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (2.5ms)[0m   [0mCREATE TABLE "design" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "Class" varchar(255), "CreateDesign" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (1.6ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('3')[0m
+Migrating to CreateSlotContent (4)
+  [4;35;1mSQL (0.5ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (2.4ms)[0m   [0;1mCREATE TABLE "slot_content" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "slot_id" integer, "renderable_id" integer, "renderable_type" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (2.1ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('4')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("content")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("design")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("slot")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("slot_content")[0m
+** has_many_polymorphs: rails environment detected
+** has_many_polymorphs: loaded ok
+** has_many_polymorphs: autoload hook invoked
+** has_many_polymorphs: preloading parent model Slot
+** has_many_polymorphs: associating Slot.slot_items
+** has_many_polymorphs: Looks like your table doesn't exist for Content.
+Error Could not find table 'contents'
+Skipping...
+** has_many_polymorphs: Looks like your table doesn't exist for Design.
+Error Could not find table 'designs'
+Skipping...
+** has_many_polymorphs: Looks like your table doesn't exist for SlotContent.
+Error Could not find table 'slot_contents'
+Skipping...
+** has_many_polymorphs: autoload hook invoked
+** has_many_polymorphs: preloading parent model Slot
+
+
+Processing DesignsController#destroy (for 0.0.0.0 at 2009-07-03 21:50:05) [DELETE]
+  Parameters: {"id"=>"37"}
+Redirected to http://test.host/designs
+Completed in 4ms (DB: 0) | 302 Found [http://test.host/designs/37]
+
+
+Processing DesignsController#destroy (for 0.0.0.0 at 2009-07-03 21:50:05) [DELETE]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/designs
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/designs/1]
+
+
+Processing DesignsController#update (for 0.0.0.0 at 2009-07-03 21:50:05) [PUT]
+  Parameters: {"design"=>{"these"=>"params"}, "id"=>"37"}
+Rendering template within layouts/designs
+Rendering designs/edit
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/designs/37?design%5Bthese%5D=params]
+
+
+Processing DesignsController#update (for 0.0.0.0 at 2009-07-03 21:50:05) [PUT]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/designs
+Rendering designs/edit
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/designs/1]
+
+
+Processing DesignsController#update (for 0.0.0.0 at 2009-07-03 21:50:05) [PUT]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/designs
+Rendering designs/edit
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/designs/1]
+
+
+Processing DesignsController#update (for 0.0.0.0 at 2009-07-03 21:50:05) [PUT]
+  Parameters: {"design"=>{"these"=>"params"}, "id"=>"37"}
+Rendering template within layouts/designs
+Rendering designs/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/designs/37?design%5Bthese%5D=params]
+
+
+Processing DesignsController#update (for 0.0.0.0 at 2009-07-03 21:50:05) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to #[Design:0x1047dd2 @name="Design_1007"]
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/designs/1]
+
+
+Processing DesignsController#update (for 0.0.0.0 at 2009-07-03 21:50:05) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to #[Design:0x104163a @name="Design_1008"]
+Completed in 3ms (DB: 0) | 302 Found [http://test.host/designs/1]
+
+
+Processing DesignsController#create (for 0.0.0.0 at 2009-07-03 21:50:05) [POST]
+  Parameters: {"design"=>{"these"=>"params"}}
+Rendering template within layouts/designs
+Rendering designs/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/designs?design%5Bthese%5D=params]
+
+
+Processing DesignsController#create (for 0.0.0.0 at 2009-07-03 21:50:05) [POST]
+  Parameters: {"design"=>{}}
+Rendering template within layouts/designs
+Rendering designs/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/designs?]
+
+
+Processing DesignsController#create (for 0.0.0.0 at 2009-07-03 21:50:05) [POST]
+  Parameters: {"design"=>{"these"=>"params"}}
+Redirected to #[Design:0x102ef08 @name="Design_1011"]
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/designs?design%5Bthese%5D=params]
+
+
+Processing DesignsController#create (for 0.0.0.0 at 2009-07-03 21:50:05) [POST]
+  Parameters: {"design"=>{}}
+Redirected to #[Design:0x1028838 @name="Design_1012"]
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/designs?]
+
+
+Processing DesignsController#edit (for 0.0.0.0 at 2009-07-03 21:50:05) [GET]
+  Parameters: {"id"=>"37"}
+Rendering template within layouts/designs
+Rendering designs/edit
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/designs/37/edit]
+
+
+Processing DesignsController#new (for 0.0.0.0 at 2009-07-03 21:50:05) [GET]
+Rendering template within layouts/designs
+Rendering designs/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/designs/new]
+
+
+Processing DesignsController#show (for 0.0.0.0 at 2009-07-03 21:50:05) [GET]
+  Parameters: {"id"=>"37"}
+Rendering template within layouts/designs
+Rendering designs/show
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/designs/37]
+
+
+Processing DesignsController#index (for 0.0.0.0 at 2009-07-03 21:50:05) [GET]
+Rendering template within layouts/designs
+Rendering designs/index
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://test.host/designs]
+
+
+Processing SlotsController#destroy (for 0.0.0.0 at 2009-07-03 21:50:05) [DELETE]
+  Parameters: {"id"=>"37"}
+Redirected to http://test.host/slots
+Completed in 5ms (DB: 0) | 302 Found [http://test.host/slots/37]
+
+
+Processing SlotsController#destroy (for 0.0.0.0 at 2009-07-03 21:50:05) [DELETE]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/slots
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/slots/1]
+
+
+Processing SlotsController#update (for 0.0.0.0 at 2009-07-03 21:50:05) [PUT]
+  Parameters: {"id"=>"37", "slot"=>{"these"=>"params"}}
+Rendering template within layouts/slots
+Rendering slots/edit
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://test.host/slots/37?slot%5Bthese%5D=params]
+
+
+Processing SlotsController#update (for 0.0.0.0 at 2009-07-03 21:50:05) [PUT]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/slots
+Rendering slots/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/slots/1]
+
+
+Processing SlotsController#update (for 0.0.0.0 at 2009-07-03 21:50:05) [PUT]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/slots
+Rendering slots/edit
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/slots/1]
+
+
+Processing SlotsController#update (for 0.0.0.0 at 2009-07-03 21:50:05) [PUT]
+  Parameters: {"id"=>"37", "slot"=>{"these"=>"params"}}
+Rendering template within layouts/slots
+Rendering slots/edit
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/slots/37?slot%5Bthese%5D=params]
+
+
+Processing SlotsController#update (for 0.0.0.0 at 2009-07-03 21:50:05) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to #[Slot:0x127d4ee @name="Slot_1028"]
+Completed in 4ms (DB: 0) | 302 Found [http://test.host/slots/1]
+
+
+Processing SlotsController#update (for 0.0.0.0 at 2009-07-03 21:50:05) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to #[Slot:0x1262874 @name="Slot_1029"]
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/slots/1]
+
+
+Processing SlotsController#create (for 0.0.0.0 at 2009-07-03 21:50:05) [POST]
+  Parameters: {"slot"=>{"these"=>"params"}}
+Rendering template within layouts/slots
+Rendering slots/new
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/slots?slot%5Bthese%5D=params]
+
+
+Processing SlotsController#create (for 0.0.0.0 at 2009-07-03 21:50:05) [POST]
+  Parameters: {"slot"=>{}}
+Rendering template within layouts/slots
+Rendering slots/new
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/slots?]
+
+
+Processing SlotsController#create (for 0.0.0.0 at 2009-07-03 21:50:05) [POST]
+  Parameters: {"slot"=>{"these"=>"params"}}
+Redirected to #[Slot:0x122fe2e @name="Slot_1032"]
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/slots?slot%5Bthese%5D=params]
+
+
+Processing SlotsController#create (for 0.0.0.0 at 2009-07-03 21:50:05) [POST]
+  Parameters: {"slot"=>{}}
+Redirected to #[Slot:0x1213b84 @name="Slot_1033"]
+Completed in 3ms (DB: 0) | 302 Found [http://test.host/slots?]
+
+
+Processing SlotsController#edit (for 0.0.0.0 at 2009-07-03 21:50:05) [GET]
+  Parameters: {"id"=>"37"}
+Rendering template within layouts/slots
+Rendering slots/edit
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://test.host/slots/37/edit]
+
+
+Processing SlotsController#new (for 0.0.0.0 at 2009-07-03 21:50:05) [GET]
+Rendering template within layouts/slots
+Rendering slots/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/slots/new]
+
+
+Processing SlotsController#show (for 0.0.0.0 at 2009-07-03 21:50:05) [GET]
+  Parameters: {"id"=>"37"}
+Rendering template within layouts/slots
+Rendering slots/show
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/slots/37]
+
+
+Processing SlotsController#index (for 0.0.0.0 at 2009-07-03 21:50:05) [GET]
+Rendering template within layouts/slots
+Rendering slots/index
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/slots]
+
+
+Processing ContentsController#destroy (for 0.0.0.0 at 2009-07-03 21:50:05) [DELETE]
+  Parameters: {"id"=>"37"}
+Redirected to http://test.host/contents
+Completed in 4ms (DB: 0) | 302 Found [http://test.host/contents/37]
+
+
+Processing ContentsController#destroy (for 0.0.0.0 at 2009-07-03 21:50:05) [DELETE]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/contents
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/contents/1]
+
+
+Processing ContentsController#update (for 0.0.0.0 at 2009-07-03 21:50:05) [PUT]
+  Parameters: {"id"=>"37", "content"=>{"these"=>"params"}}
+Rendering template within layouts/contents
+Rendering contents/edit
+Completed in 4ms (View: 4, DB: 0) | 200 OK [http://test.host/contents/37?content%5Bthese%5D=params]
+
+
+Processing ContentsController#update (for 0.0.0.0 at 2009-07-03 21:50:05) [PUT]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/contents
+Rendering contents/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/contents/1]
+
+
+Processing ContentsController#update (for 0.0.0.0 at 2009-07-03 21:50:05) [PUT]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/contents
+Rendering contents/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/contents/1]
+
+
+Processing ContentsController#update (for 0.0.0.0 at 2009-07-03 21:50:06) [PUT]
+  Parameters: {"id"=>"37", "content"=>{"these"=>"params"}}
+Rendering template within layouts/contents
+Rendering contents/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/contents/37?content%5Bthese%5D=params]
+
+
+Processing ContentsController#update (for 0.0.0.0 at 2009-07-03 21:50:06) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to #[Content:0x106abac @name="Content_1049"]
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/contents/1]
+
+
+Processing ContentsController#update (for 0.0.0.0 at 2009-07-03 21:50:06) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to #[Content:0x1064270 @name="Content_1050"]
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/contents/1]
+
+
+Processing ContentsController#create (for 0.0.0.0 at 2009-07-03 21:50:06) [POST]
+  Parameters: {"content"=>{"these"=>"params"}}
+Rendering template within layouts/contents
+Rendering contents/new
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/contents?content%5Bthese%5D=params]
+
+
+Processing ContentsController#create (for 0.0.0.0 at 2009-07-03 21:50:06) [POST]
+  Parameters: {"content"=>{}}
+Rendering template within layouts/contents
+Rendering contents/new
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/contents?]
+
+
+Processing ContentsController#create (for 0.0.0.0 at 2009-07-03 21:50:06) [POST]
+  Parameters: {"content"=>{"these"=>"params"}}
+Redirected to #[Content:0x1051990 @name="Content_1053"]
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/contents?content%5Bthese%5D=params]
+
+
+Processing ContentsController#create (for 0.0.0.0 at 2009-07-03 21:50:06) [POST]
+  Parameters: {"content"=>{}}
+Redirected to #[Content:0x104b20c @name="Content_1054"]
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/contents?]
+
+
+Processing ContentsController#edit (for 0.0.0.0 at 2009-07-03 21:50:06) [GET]
+  Parameters: {"id"=>"37"}
+Rendering template within layouts/contents
+Rendering contents/edit
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/contents/37/edit]
+
+
+Processing ContentsController#new (for 0.0.0.0 at 2009-07-03 21:50:06) [GET]
+Rendering template within layouts/contents
+Rendering contents/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/contents/new]
+
+
+Processing ContentsController#show (for 0.0.0.0 at 2009-07-03 21:50:06) [GET]
+  Parameters: {"id"=>"37"}
+Rendering template within layouts/contents
+Rendering contents/show
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/contents/37]
+
+
+Processing ContentsController#index (for 0.0.0.0 at 2009-07-03 21:50:06) [GET]
+Rendering template within layouts/contents
+Rendering contents/index
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/contents]
+
+
+Processing SlotContentsController#destroy (for 0.0.0.0 at 2009-07-03 21:50:06) [DELETE]
+  Parameters: {"id"=>"37"}
+Redirected to http://test.host/slot_contents
+Completed in 5ms (DB: 0) | 302 Found [http://test.host/slot_contents/37]
+
+
+Processing SlotContentsController#destroy (for 0.0.0.0 at 2009-07-03 21:50:06) [DELETE]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/slot_contents
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/slot_contents/1]
+
+
+Processing SlotContentsController#update (for 0.0.0.0 at 2009-07-03 21:50:06) [PUT]
+  Parameters: {"slot_content"=>{"these"=>"params"}, "id"=>"37"}
+Rendering template within layouts/slot_contents
+Rendering slot_contents/edit
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/slot_contents/37?slot_content%5Bthese%5D=params]
+
+
+Processing SlotContentsController#update (for 0.0.0.0 at 2009-07-03 21:50:06) [PUT]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/slot_contents
+Rendering slot_contents/edit
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/slot_contents/1]
+
+
+Processing SlotContentsController#update (for 0.0.0.0 at 2009-07-03 21:50:06) [PUT]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/slot_contents
+Rendering slot_contents/edit
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/slot_contents/1]
+
+
+Processing SlotContentsController#update (for 0.0.0.0 at 2009-07-03 21:50:06) [PUT]
+  Parameters: {"slot_content"=>{"these"=>"params"}, "id"=>"37"}
+Rendering template within layouts/slot_contents
+Rendering slot_contents/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/slot_contents/37?slot_content%5Bthese%5D=params]
+
+
+Processing SlotContentsController#update (for 0.0.0.0 at 2009-07-03 21:50:06) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to #[SlotContent:0xff0b54 @name="SlotContent_1068"]
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/slot_contents/1]
+
+
+Processing SlotContentsController#update (for 0.0.0.0 at 2009-07-03 21:50:06) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to #[SlotContent:0xfea286 @name="SlotContent_1069"]
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/slot_contents/1]
+
+
+Processing SlotContentsController#create (for 0.0.0.0 at 2009-07-03 21:50:06) [POST]
+  Parameters: {"slot_content"=>{"these"=>"params"}}
+Rendering template within layouts/slot_contents
+Rendering slot_contents/new
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/slot_contents?slot_content%5Bthese%5D=params]
+
+
+Processing SlotContentsController#create (for 0.0.0.0 at 2009-07-03 21:50:06) [POST]
+  Parameters: {"slot_content"=>{}}
+Rendering template within layouts/slot_contents
+Rendering slot_contents/new
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/slot_contents?]
+
+
+Processing SlotContentsController#create (for 0.0.0.0 at 2009-07-03 21:50:06) [POST]
+  Parameters: {"slot_content"=>{"these"=>"params"}}
+Redirected to #[SlotContent:0xfd670e @name="SlotContent_1072"]
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/slot_contents?slot_content%5Bthese%5D=params]
+
+
+Processing SlotContentsController#create (for 0.0.0.0 at 2009-07-03 21:50:06) [POST]
+  Parameters: {"slot_content"=>{}}
+Redirected to #[SlotContent:0xfcfbd4 @name="SlotContent_1073"]
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/slot_contents?]
+
+
+Processing SlotContentsController#edit (for 0.0.0.0 at 2009-07-03 21:50:06) [GET]
+  Parameters: {"id"=>"37"}
+Rendering template within layouts/slot_contents
+Rendering slot_contents/edit
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/slot_contents/37/edit]
+
+
+Processing SlotContentsController#new (for 0.0.0.0 at 2009-07-03 21:50:06) [GET]
+Rendering template within layouts/slot_contents
+Rendering slot_contents/new
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/slot_contents/new]
+
+
+Processing SlotContentsController#show (for 0.0.0.0 at 2009-07-03 21:50:06) [GET]
+  Parameters: {"id"=>"37"}
+Rendering template within layouts/slot_contents
+Rendering slot_contents/show
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/slot_contents/37]
+
+
+Processing SlotContentsController#index (for 0.0.0.0 at 2009-07-03 21:50:06) [GET]
+Rendering template within layouts/slot_contents
+Rendering slot_contents/index
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/slot_contents]
+** has_many_polymorphs: rails environment detected
+** has_many_polymorphs: loaded ok
+** has_many_polymorphs: autoload hook invoked
+** has_many_polymorphs: preloading parent model Slot
+** has_many_polymorphs: associating Slot.slot_items
+** has_many_polymorphs: Looks like your table doesn't exist for Content.
+Error Could not find table 'contents'
+Skipping...
+** has_many_polymorphs: Looks like your table doesn't exist for Design.
+Error Could not find table 'designs'
+Skipping...
+** has_many_polymorphs: Looks like your table doesn't exist for SlotContent.
+Error Could not find table 'slot_contents'
+Skipping...
+** has_many_polymorphs: autoload hook invoked
+** has_many_polymorphs: preloading parent model Slot
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (1.5ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateSlot (1)
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (2.6ms)[0m   [0mCREATE TABLE "slots" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (1.8ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('1')[0m
+Migrating to CreateContent (2)
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (1.8ms)[0m   [0;1mCREATE TABLE "contents" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "type" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (2.8ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('2')[0m
+Migrating to CreateDesign (3)
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (1.9ms)[0m   [0mCREATE TABLE "designs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "type" varchar(255), "name" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (1.7ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('3')[0m
+Migrating to CreateSlotContent (4)
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (2.2ms)[0m   [0;1mCREATE TABLE "slot_contents" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "slot_id" integer, "slot_item_id" integer, "slot_item_type" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (1.9ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('4')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("contents")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("designs")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("slot_contents")[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mPRAGMA index_list("slots")[0m
+** has_many_polymorphs: rails environment detected
+** has_many_polymorphs: loaded ok
+** has_many_polymorphs: autoload hook invoked
+** has_many_polymorphs: preloading parent model Slot
+** has_many_polymorphs: associating Slot.slot_items
+** has_many_polymorphs: autoload hook invoked
+** has_many_polymorphs: preloading parent model Slot
+
+
+Processing DesignsController#destroy (for 0.0.0.0 at 2009-07-03 21:50:29) [DELETE]
+  Parameters: {"id"=>"37"}
+Redirected to http://test.host/designs
+Completed in 5ms (DB: 0) | 302 Found [http://test.host/designs/37]
+
+
+Processing DesignsController#destroy (for 0.0.0.0 at 2009-07-03 21:50:29) [DELETE]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/designs
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/designs/1]
+
+
+Processing DesignsController#update (for 0.0.0.0 at 2009-07-03 21:50:29) [PUT]
+  Parameters: {"design"=>{"these"=>"params"}, "id"=>"37"}
+Rendering template within layouts/designs
+Rendering designs/edit
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/designs/37?design%5Bthese%5D=params]
+
+
+Processing DesignsController#update (for 0.0.0.0 at 2009-07-03 21:50:29) [PUT]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/designs
+Rendering designs/edit
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/designs/1]
+
+
+Processing DesignsController#update (for 0.0.0.0 at 2009-07-03 21:50:29) [PUT]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/designs
+Rendering designs/edit
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/designs/1]
+
+
+Processing DesignsController#update (for 0.0.0.0 at 2009-07-03 21:50:29) [PUT]
+  Parameters: {"design"=>{"these"=>"params"}, "id"=>"37"}
+Rendering template within layouts/designs
+Rendering designs/edit
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/designs/37?design%5Bthese%5D=params]
+
+
+Processing DesignsController#update (for 0.0.0.0 at 2009-07-03 21:50:29) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to #[Design:0x1046f54 @name="Design_1007"]
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/designs/1]
+
+
+Processing DesignsController#update (for 0.0.0.0 at 2009-07-03 21:50:29) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to #[Design:0x10407bc @name="Design_1008"]
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/designs/1]
+
+
+Processing DesignsController#create (for 0.0.0.0 at 2009-07-03 21:50:29) [POST]
+  Parameters: {"design"=>{"these"=>"params"}}
+Rendering template within layouts/designs
+Rendering designs/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/designs?design%5Bthese%5D=params]
+
+
+Processing DesignsController#create (for 0.0.0.0 at 2009-07-03 21:50:29) [POST]
+  Parameters: {"design"=>{}}
+Rendering template within layouts/designs
+Rendering designs/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/designs?]
+
+
+Processing DesignsController#create (for 0.0.0.0 at 2009-07-03 21:50:29) [POST]
+  Parameters: {"design"=>{"these"=>"params"}}
+Redirected to #[Design:0x102e08a @name="Design_1011"]
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/designs?design%5Bthese%5D=params]
+
+
+Processing DesignsController#create (for 0.0.0.0 at 2009-07-03 21:50:29) [POST]
+  Parameters: {"design"=>{}}
+Redirected to #[Design:0x10279ba @name="Design_1012"]
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/designs?]
+
+
+Processing DesignsController#edit (for 0.0.0.0 at 2009-07-03 21:50:29) [GET]
+  Parameters: {"id"=>"37"}
+Rendering template within layouts/designs
+Rendering designs/edit
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/designs/37/edit]
+
+
+Processing DesignsController#new (for 0.0.0.0 at 2009-07-03 21:50:29) [GET]
+Rendering template within layouts/designs
+Rendering designs/new
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/designs/new]
+
+
+Processing DesignsController#show (for 0.0.0.0 at 2009-07-03 21:50:29) [GET]
+  Parameters: {"id"=>"37"}
+Rendering template within layouts/designs
+Rendering designs/show
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/designs/37]
+
+
+Processing DesignsController#index (for 0.0.0.0 at 2009-07-03 21:50:29) [GET]
+Rendering template within layouts/designs
+Rendering designs/index
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/designs]
+Rendering designs/edit.html.erb
+  [4;36;1mDesign Create (0.7ms)[0m   [0;1mINSERT INTO "designs" ("name", "updated_at", "type", "created_at") VALUES(NULL, '2009-07-04 04:50:29', NULL, '2009-07-04 04:50:29')[0m
+Rendering designs/index.html.erb
+Rendering designs/new.html.erb
+Rendering designs/show.html.erb
+Rendering slots/edit.html.erb
+
+
+Processing SlotsController#destroy (for 0.0.0.0 at 2009-07-03 21:50:29) [DELETE]
+  Parameters: {"id"=>"37"}
+Redirected to http://test.host/slots
+Completed in 99ms (DB: 0) | 302 Found [http://test.host/slots/37]
+
+
+Processing SlotsController#destroy (for 0.0.0.0 at 2009-07-03 21:50:29) [DELETE]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/slots
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/slots/1]
+
+
+Processing SlotsController#update (for 0.0.0.0 at 2009-07-03 21:50:29) [PUT]
+  Parameters: {"id"=>"37", "slot"=>{"these"=>"params"}}
+Rendering template within layouts/slots
+Rendering slots/edit
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/slots/37?slot%5Bthese%5D=params]
+
+
+Processing SlotsController#update (for 0.0.0.0 at 2009-07-03 21:50:29) [PUT]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/slots
+Rendering slots/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/slots/1]
+
+
+Processing SlotsController#update (for 0.0.0.0 at 2009-07-03 21:50:29) [PUT]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/slots
+Rendering slots/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/slots/1]
+
+
+Processing SlotsController#update (for 0.0.0.0 at 2009-07-03 21:50:29) [PUT]
+  Parameters: {"id"=>"37", "slot"=>{"these"=>"params"}}
+Rendering template within layouts/slots
+Rendering slots/edit
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://test.host/slots/37?slot%5Bthese%5D=params]
+
+
+Processing SlotsController#update (for 0.0.0.0 at 2009-07-03 21:50:29) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to #[Slot:0x1258040 @name="Slot_1029"]
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/slots/1]
+
+
+Processing SlotsController#update (for 0.0.0.0 at 2009-07-03 21:50:29) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to #[Slot:0x123f630 @name="Slot_1030"]
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/slots/1]
+
+
+Processing SlotsController#create (for 0.0.0.0 at 2009-07-03 21:50:29) [POST]
+  Parameters: {"slot"=>{"these"=>"params"}}
+Rendering template within layouts/slots
+Rendering slots/new
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/slots?slot%5Bthese%5D=params]
+
+
+Processing SlotsController#create (for 0.0.0.0 at 2009-07-03 21:50:29) [POST]
+  Parameters: {"slot"=>{}}
+Rendering template within layouts/slots
+Rendering slots/new
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://test.host/slots?]
+
+
+Processing SlotsController#create (for 0.0.0.0 at 2009-07-03 21:50:29) [POST]
+  Parameters: {"slot"=>{"these"=>"params"}}
+Redirected to #[Slot:0x11f6840 @name="Slot_1033"]
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/slots?slot%5Bthese%5D=params]
+
+
+Processing SlotsController#create (for 0.0.0.0 at 2009-07-03 21:50:29) [POST]
+  Parameters: {"slot"=>{}}
+Redirected to #[Slot:0x11ae248 @name="Slot_1034"]
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/slots?]
+
+
+Processing SlotsController#edit (for 0.0.0.0 at 2009-07-03 21:50:29) [GET]
+  Parameters: {"id"=>"37"}
+Rendering template within layouts/slots
+Rendering slots/edit
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/slots/37/edit]
+
+
+Processing SlotsController#new (for 0.0.0.0 at 2009-07-03 21:50:29) [GET]
+Rendering template within layouts/slots
+Rendering slots/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/slots/new]
+
+
+Processing SlotsController#show (for 0.0.0.0 at 2009-07-03 21:50:29) [GET]
+  Parameters: {"id"=>"37"}
+Rendering template within layouts/slots
+Rendering slots/show
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/slots/37]
+
+
+Processing SlotsController#index (for 0.0.0.0 at 2009-07-03 21:50:29) [GET]
+Rendering template within layouts/slots
+Rendering slots/index
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/slots]
+Rendering slots/index.html.erb
+Rendering slots/new.html.erb
+Rendering slots/show.html.erb
+  [4;35;1mSlot Create (0.6ms)[0m   [0mINSERT INTO "slots" ("name", "updated_at", "created_at") VALUES(NULL, '2009-07-04 04:50:29', '2009-07-04 04:50:29')[0m
+Rendering contents/index.html.erb
+Rendering contents/new.html.erb
+
+
+Processing ContentsController#destroy (for 0.0.0.0 at 2009-07-03 21:50:29) [DELETE]
+  Parameters: {"id"=>"37"}
+Redirected to http://test.host/contents
+Completed in 10ms (DB: 0) | 302 Found [http://test.host/contents/37]
+
+
+Processing ContentsController#destroy (for 0.0.0.0 at 2009-07-03 21:50:29) [DELETE]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/contents
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/contents/1]
+
+
+Processing ContentsController#update (for 0.0.0.0 at 2009-07-03 21:50:29) [PUT]
+  Parameters: {"id"=>"37", "content"=>{"these"=>"params"}}
+Rendering template within layouts/contents
+Rendering contents/edit
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://test.host/contents/37?content%5Bthese%5D=params]
+
+
+Processing ContentsController#update (for 0.0.0.0 at 2009-07-03 21:50:29) [PUT]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/contents
+Rendering contents/edit
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://test.host/contents/1]
+
+
+Processing ContentsController#update (for 0.0.0.0 at 2009-07-03 21:50:29) [PUT]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/contents
+Rendering contents/edit
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://test.host/contents/1]
+
+
+Processing ContentsController#update (for 0.0.0.0 at 2009-07-03 21:50:29) [PUT]
+  Parameters: {"id"=>"37", "content"=>{"these"=>"params"}}
+Rendering template within layouts/contents
+Rendering contents/edit
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/contents/37?content%5Bthese%5D=params]
+
+
+Processing ContentsController#update (for 0.0.0.0 at 2009-07-03 21:50:29) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to #[Content:0x1054618 @name="Content_1052"]
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/contents/1]
+
+
+Processing ContentsController#update (for 0.0.0.0 at 2009-07-03 21:50:29) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to #[Content:0x104e09c @name="Content_1053"]
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/contents/1]
+
+
+Processing ContentsController#create (for 0.0.0.0 at 2009-07-03 21:50:29) [POST]
+  Parameters: {"content"=>{"these"=>"params"}}
+Rendering template within layouts/contents
+Rendering contents/new
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/contents?content%5Bthese%5D=params]
+
+
+Processing ContentsController#create (for 0.0.0.0 at 2009-07-03 21:50:29) [POST]
+  Parameters: {"content"=>{}}
+Rendering template within layouts/contents
+Rendering contents/new
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/contents?]
+
+
+Processing ContentsController#create (for 0.0.0.0 at 2009-07-03 21:50:29) [POST]
+  Parameters: {"content"=>{"these"=>"params"}}
+Redirected to #[Content:0x103b866 @name="Content_1056"]
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/contents?content%5Bthese%5D=params]
+
+
+Processing ContentsController#create (for 0.0.0.0 at 2009-07-03 21:50:29) [POST]
+  Parameters: {"content"=>{}}
+Redirected to #[Content:0x1035060 @name="Content_1057"]
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/contents?]
+
+
+Processing ContentsController#edit (for 0.0.0.0 at 2009-07-03 21:50:29) [GET]
+  Parameters: {"id"=>"37"}
+Rendering template within layouts/contents
+Rendering contents/edit
+Completed in 6ms (View: 5, DB: 0) | 200 OK [http://test.host/contents/37/edit]
+
+
+Processing ContentsController#new (for 0.0.0.0 at 2009-07-03 21:50:29) [GET]
+Rendering template within layouts/contents
+Rendering contents/new
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/contents/new]
+
+
+Processing ContentsController#show (for 0.0.0.0 at 2009-07-03 21:50:30) [GET]
+  Parameters: {"id"=>"37"}
+Rendering template within layouts/contents
+Rendering contents/show
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/contents/37]
+
+
+Processing ContentsController#index (for 0.0.0.0 at 2009-07-03 21:50:30) [GET]
+Rendering template within layouts/contents
+Rendering contents/index
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/contents]
+Rendering contents/show.html.erb
+Rendering contents/edit.html.erb
+  [4;36;1mContent Create (1.4ms)[0m   [0;1mINSERT INTO "contents" ("updated_at", "type", "created_at") VALUES('2009-07-04 04:50:30', NULL, '2009-07-04 04:50:30')[0m
+Rendering slot_contents/show.html.erb
+
+
+Processing SlotContentsController#destroy (for 0.0.0.0 at 2009-07-03 21:50:30) [DELETE]
+  Parameters: {"id"=>"37"}
+Redirected to http://test.host/slot_contents
+Completed in 4ms (DB: 0) | 302 Found [http://test.host/slot_contents/37]
+
+
+Processing SlotContentsController#destroy (for 0.0.0.0 at 2009-07-03 21:50:30) [DELETE]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/slot_contents
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/slot_contents/1]
+
+
+Processing SlotContentsController#update (for 0.0.0.0 at 2009-07-03 21:50:30) [PUT]
+  Parameters: {"slot_content"=>{"these"=>"params"}, "id"=>"37"}
+Rendering template within layouts/slot_contents
+Rendering slot_contents/edit
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/slot_contents/37?slot_content%5Bthese%5D=params]
+
+
+Processing SlotContentsController#update (for 0.0.0.0 at 2009-07-03 21:50:30) [PUT]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/slot_contents
+Rendering slot_contents/edit
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://test.host/slot_contents/1]
+
+
+Processing SlotContentsController#update (for 0.0.0.0 at 2009-07-03 21:50:30) [PUT]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/slot_contents
+Rendering slot_contents/edit
+Completed in 2ms (View: 0, DB: 0) | 200 OK [http://test.host/slot_contents/1]
+
+
+Processing SlotContentsController#update (for 0.0.0.0 at 2009-07-03 21:50:30) [PUT]
+  Parameters: {"slot_content"=>{"these"=>"params"}, "id"=>"37"}
+Rendering template within layouts/slot_contents
+Rendering slot_contents/edit
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/slot_contents/37?slot_content%5Bthese%5D=params]
+
+
+Processing SlotContentsController#update (for 0.0.0.0 at 2009-07-03 21:50:30) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to #[SlotContent:0xfd12a4 @name="SlotContent_1071"]
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/slot_contents/1]
+
+
+Processing SlotContentsController#update (for 0.0.0.0 at 2009-07-03 21:50:30) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to #[SlotContent:0xfca404 @name="SlotContent_1072"]
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/slot_contents/1]
+
+
+Processing SlotContentsController#create (for 0.0.0.0 at 2009-07-03 21:50:30) [POST]
+  Parameters: {"slot_content"=>{"these"=>"params"}}
+Rendering template within layouts/slot_contents
+Rendering slot_contents/new
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/slot_contents?slot_content%5Bthese%5D=params]
+
+
+Processing SlotContentsController#create (for 0.0.0.0 at 2009-07-03 21:50:30) [POST]
+  Parameters: {"slot_content"=>{}}
+Rendering template within layouts/slot_contents
+Rendering slot_contents/new
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/slot_contents?]
+
+
+Processing SlotContentsController#create (for 0.0.0.0 at 2009-07-03 21:50:30) [POST]
+  Parameters: {"slot_content"=>{"these"=>"params"}}
+Redirected to #[SlotContent:0xfb7cb4 @name="SlotContent_1075"]
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/slot_contents?slot_content%5Bthese%5D=params]
+
+
+Processing SlotContentsController#create (for 0.0.0.0 at 2009-07-03 21:50:30) [POST]
+  Parameters: {"slot_content"=>{}}
+Redirected to #[SlotContent:0xfb15d0 @name="SlotContent_1076"]
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/slot_contents?]
+
+
+Processing SlotContentsController#edit (for 0.0.0.0 at 2009-07-03 21:50:30) [GET]
+  Parameters: {"id"=>"37"}
+Rendering template within layouts/slot_contents
+Rendering slot_contents/edit
+Completed in 2ms (View: 2, DB: 0) | 200 OK [http://test.host/slot_contents/37/edit]
+
+
+Processing SlotContentsController#new (for 0.0.0.0 at 2009-07-03 21:50:30) [GET]
+Rendering template within layouts/slot_contents
+Rendering slot_contents/new
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/slot_contents/new]
+
+
+Processing SlotContentsController#show (for 0.0.0.0 at 2009-07-03 21:50:30) [GET]
+  Parameters: {"id"=>"37"}
+Rendering template within layouts/slot_contents
+Rendering slot_contents/show
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/slot_contents/37]
+
+
+Processing SlotContentsController#index (for 0.0.0.0 at 2009-07-03 21:50:30) [GET]
+Rendering template within layouts/slot_contents
+Rendering slot_contents/index
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/slot_contents]
+Rendering slot_contents/new.html.erb
+Rendering slot_contents/index.html.erb
+Rendering slot_contents/edit.html.erb
+** has_many_polymorphs: rails environment detected
+** has_many_polymorphs: loaded ok
+** has_many_polymorphs: autoload hook invoked
+** has_many_polymorphs: preloading parent model Slot
+** has_many_polymorphs: associating Slot.slot_items
+** has_many_polymorphs: autoload hook invoked
+** has_many_polymorphs: preloading parent model Slot
+
+
+Processing DesignsController#destroy (for 0.0.0.0 at 2009-07-03 21:51:24) [DELETE]
+  Parameters: {"id"=>"37"}
+Redirected to http://test.host/designs
+Completed in 4ms (DB: 0) | 302 Found [http://test.host/designs/37]
+
+
+Processing DesignsController#destroy (for 0.0.0.0 at 2009-07-03 21:51:24) [DELETE]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/designs
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/designs/1]
+
+
+Processing DesignsController#update (for 0.0.0.0 at 2009-07-03 21:51:24) [PUT]
+  Parameters: {"design"=>{"these"=>"params"}, "id"=>"37"}
+Rendering template within layouts/designs
+Rendering designs/edit
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/designs/37?design%5Bthese%5D=params]
+
+
+Processing DesignsController#update (for 0.0.0.0 at 2009-07-03 21:51:24) [PUT]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/designs
+Rendering designs/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/designs/1]
+
+
+Processing DesignsController#update (for 0.0.0.0 at 2009-07-03 21:51:24) [PUT]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/designs
+Rendering designs/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/designs/1]
+
+
+Processing DesignsController#update (for 0.0.0.0 at 2009-07-03 21:51:24) [PUT]
+  Parameters: {"design"=>{"these"=>"params"}, "id"=>"37"}
+Rendering template within layouts/designs
+Rendering designs/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/designs/37?design%5Bthese%5D=params]
+
+
+Processing DesignsController#update (for 0.0.0.0 at 2009-07-03 21:51:24) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to #[Design:0x103cc3e @name="Design_1007"]
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/designs/1]
+
+
+Processing DesignsController#update (for 0.0.0.0 at 2009-07-03 21:51:24) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to #[Design:0x103647e @name="Design_1008"]
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/designs/1]
+
+
+Processing DesignsController#create (for 0.0.0.0 at 2009-07-03 21:51:24) [POST]
+  Parameters: {"design"=>{"these"=>"params"}}
+Rendering template within layouts/designs
+Rendering designs/new
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/designs?design%5Bthese%5D=params]
+
+
+Processing DesignsController#create (for 0.0.0.0 at 2009-07-03 21:51:24) [POST]
+  Parameters: {"design"=>{}}
+Rendering template within layouts/designs
+Rendering designs/new
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/designs?]
+
+
+Processing DesignsController#create (for 0.0.0.0 at 2009-07-03 21:51:24) [POST]
+  Parameters: {"design"=>{"these"=>"params"}}
+Redirected to #[Design:0x1023d2e @name="Design_1011"]
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/designs?design%5Bthese%5D=params]
+
+
+Processing DesignsController#create (for 0.0.0.0 at 2009-07-03 21:51:24) [POST]
+  Parameters: {"design"=>{}}
+Redirected to #[Design:0x101d640 @name="Design_1012"]
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/designs?]
+
+
+Processing DesignsController#edit (for 0.0.0.0 at 2009-07-03 21:51:24) [GET]
+  Parameters: {"id"=>"37"}
+Rendering template within layouts/designs
+Rendering designs/edit
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/designs/37/edit]
+
+
+Processing DesignsController#new (for 0.0.0.0 at 2009-07-03 21:51:24) [GET]
+Rendering template within layouts/designs
+Rendering designs/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/designs/new]
+
+
+Processing DesignsController#show (for 0.0.0.0 at 2009-07-03 21:51:24) [GET]
+  Parameters: {"id"=>"37"}
+Rendering template within layouts/designs
+Rendering designs/show
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/designs/37]
+
+
+Processing DesignsController#index (for 0.0.0.0 at 2009-07-03 21:51:24) [GET]
+Rendering template within layouts/designs
+Rendering designs/index
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/designs]
+Rendering designs/edit.html.erb
+Rendering designs/index.html.erb
+  [4;36;1mDesign Create (0.7ms)[0m   [0;1mINSERT INTO "designs" ("name", "updated_at", "type", "created_at") VALUES(NULL, '2009-07-04 04:51:24', NULL, '2009-07-04 04:51:24')[0m
+Rendering designs/show.html.erb
+Rendering designs/new.html.erb
+Rendering slots/edit.html.erb
+
+
+Processing SlotsController#destroy (for 0.0.0.0 at 2009-07-03 21:51:24) [DELETE]
+  Parameters: {"id"=>"37"}
+Redirected to http://test.host/slots
+Completed in 4ms (DB: 0) | 302 Found [http://test.host/slots/37]
+
+
+Processing SlotsController#destroy (for 0.0.0.0 at 2009-07-03 21:51:25) [DELETE]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/slots
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/slots/1]
+
+
+Processing SlotsController#update (for 0.0.0.0 at 2009-07-03 21:51:25) [PUT]
+  Parameters: {"id"=>"37", "slot"=>{"these"=>"params"}}
+Rendering template within layouts/slots
+Rendering slots/edit
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/slots/37?slot%5Bthese%5D=params]
+
+
+Processing SlotsController#update (for 0.0.0.0 at 2009-07-03 21:51:25) [PUT]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/slots
+Rendering slots/edit
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/slots/1]
+
+
+Processing SlotsController#update (for 0.0.0.0 at 2009-07-03 21:51:25) [PUT]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/slots
+Rendering slots/edit
+Completed in 2ms (View: 0, DB: 0) | 200 OK [http://test.host/slots/1]
+
+
+Processing SlotsController#update (for 0.0.0.0 at 2009-07-03 21:51:25) [PUT]
+  Parameters: {"id"=>"37", "slot"=>{"these"=>"params"}}
+Rendering template within layouts/slots
+Rendering slots/edit
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/slots/37?slot%5Bthese%5D=params]
+
+
+Processing SlotsController#update (for 0.0.0.0 at 2009-07-03 21:51:25) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to #[Slot:0x1229560 @name="Slot_1029"]
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/slots/1]
+
+
+Processing SlotsController#update (for 0.0.0.0 at 2009-07-03 21:51:25) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to #[Slot:0x120f034 @name="Slot_1030"]
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/slots/1]
+
+
+Processing SlotsController#create (for 0.0.0.0 at 2009-07-03 21:51:25) [POST]
+  Parameters: {"slot"=>{"these"=>"params"}}
+Rendering template within layouts/slots
+Rendering slots/new
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://test.host/slots?slot%5Bthese%5D=params]
+
+
+Processing SlotsController#create (for 0.0.0.0 at 2009-07-03 21:51:25) [POST]
+  Parameters: {"slot"=>{}}
+Rendering template within layouts/slots
+Rendering slots/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/slots?]
+
+
+Processing SlotsController#create (for 0.0.0.0 at 2009-07-03 21:51:25) [POST]
+  Parameters: {"slot"=>{"these"=>"params"}}
+Redirected to #[Slot:0x1161362 @name="Slot_1033"]
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/slots?slot%5Bthese%5D=params]
+
+
+Processing SlotsController#create (for 0.0.0.0 at 2009-07-03 21:51:25) [POST]
+  Parameters: {"slot"=>{}}
+Redirected to #[Slot:0x11480d8 @name="Slot_1034"]
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/slots?]
+
+
+Processing SlotsController#edit (for 0.0.0.0 at 2009-07-03 21:51:25) [GET]
+  Parameters: {"id"=>"37"}
+Rendering template within layouts/slots
+Rendering slots/edit
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/slots/37/edit]
+
+
+Processing SlotsController#new (for 0.0.0.0 at 2009-07-03 21:51:25) [GET]
+Rendering template within layouts/slots
+Rendering slots/new
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/slots/new]
+
+
+Processing SlotsController#show (for 0.0.0.0 at 2009-07-03 21:51:25) [GET]
+  Parameters: {"id"=>"37"}
+Rendering template within layouts/slots
+Rendering slots/show
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/slots/37]
+
+
+Processing SlotsController#index (for 0.0.0.0 at 2009-07-03 21:51:25) [GET]
+Rendering template within layouts/slots
+Rendering slots/index
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/slots]
+Rendering slots/new.html.erb
+  [4;35;1mSlot Create (0.6ms)[0m   [0mINSERT INTO "slots" ("name", "updated_at", "created_at") VALUES(NULL, '2009-07-04 04:51:25', '2009-07-04 04:51:25')[0m
+Rendering slots/index.html.erb
+Rendering slots/show.html.erb
+
+
+Processing ContentsController#destroy (for 0.0.0.0 at 2009-07-03 21:51:25) [DELETE]
+  Parameters: {"id"=>"37"}
+Redirected to http://test.host/contents
+Completed in 4ms (DB: 0) | 302 Found [http://test.host/contents/37]
+
+
+Processing ContentsController#destroy (for 0.0.0.0 at 2009-07-03 21:51:25) [DELETE]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/contents
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/contents/1]
+
+
+Processing ContentsController#update (for 0.0.0.0 at 2009-07-03 21:51:25) [PUT]
+  Parameters: {"id"=>"37", "content"=>{"these"=>"params"}}
+Rendering template within layouts/contents
+Rendering contents/edit
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/contents/37?content%5Bthese%5D=params]
+
+
+Processing ContentsController#update (for 0.0.0.0 at 2009-07-03 21:51:25) [PUT]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/contents
+Rendering contents/edit
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/contents/1]
+
+
+Processing ContentsController#update (for 0.0.0.0 at 2009-07-03 21:51:25) [PUT]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/contents
+Rendering contents/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/contents/1]
+
+
+Processing ContentsController#update (for 0.0.0.0 at 2009-07-03 21:51:25) [PUT]
+  Parameters: {"id"=>"37", "content"=>{"these"=>"params"}}
+Rendering template within layouts/contents
+Rendering contents/edit
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/contents/37?content%5Bthese%5D=params]
+
+
+Processing ContentsController#update (for 0.0.0.0 at 2009-07-03 21:51:25) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to #[Content:0x104ab40 @name="Content_1049"]
+Completed in 4ms (DB: 0) | 302 Found [http://test.host/contents/1]
+
+
+Processing ContentsController#update (for 0.0.0.0 at 2009-07-03 21:51:25) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to #[Content:0x1044394 @name="Content_1050"]
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/contents/1]
+
+
+Processing ContentsController#create (for 0.0.0.0 at 2009-07-03 21:51:25) [POST]
+  Parameters: {"content"=>{"these"=>"params"}}
+Rendering template within layouts/contents
+Rendering contents/new
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/contents?content%5Bthese%5D=params]
+
+
+Processing ContentsController#create (for 0.0.0.0 at 2009-07-03 21:51:25) [POST]
+  Parameters: {"content"=>{}}
+Rendering template within layouts/contents
+Rendering contents/new
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://test.host/contents?]
+
+
+Processing ContentsController#create (for 0.0.0.0 at 2009-07-03 21:51:25) [POST]
+  Parameters: {"content"=>{"these"=>"params"}}
+Redirected to #[Content:0x1031b40 @name="Content_1053"]
+Completed in 5ms (DB: 0) | 302 Found [http://test.host/contents?content%5Bthese%5D=params]
+
+
+Processing ContentsController#create (for 0.0.0.0 at 2009-07-03 21:51:25) [POST]
+  Parameters: {"content"=>{}}
+Redirected to #[Content:0x102b31c @name="Content_1054"]
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/contents?]
+
+
+Processing ContentsController#edit (for 0.0.0.0 at 2009-07-03 21:51:25) [GET]
+  Parameters: {"id"=>"37"}
+Rendering template within layouts/contents
+Rendering contents/edit
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/contents/37/edit]
+
+
+Processing ContentsController#new (for 0.0.0.0 at 2009-07-03 21:51:25) [GET]
+Rendering template within layouts/contents
+Rendering contents/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/contents/new]
+
+
+Processing ContentsController#show (for 0.0.0.0 at 2009-07-03 21:51:25) [GET]
+  Parameters: {"id"=>"37"}
+Rendering template within layouts/contents
+Rendering contents/show
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/contents/37]
+
+
+Processing ContentsController#index (for 0.0.0.0 at 2009-07-03 21:51:25) [GET]
+Rendering template within layouts/contents
+Rendering contents/index
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/contents]
+  [4;36;1mContent Create (1.3ms)[0m   [0;1mINSERT INTO "contents" ("updated_at", "type", "created_at") VALUES('2009-07-04 04:51:25', NULL, '2009-07-04 04:51:25')[0m
+Rendering contents/show.html.erb
+Rendering contents/new.html.erb
+Rendering contents/index.html.erb
+Rendering contents/edit.html.erb
+Rendering slot_contents/index.html.erb
+Rendering slot_contents/show.html.erb
+
+
+Processing SlotContentsController#destroy (for 0.0.0.0 at 2009-07-03 21:51:25) [DELETE]
+  Parameters: {"id"=>"37"}
+Redirected to http://test.host/slot_contents
+Completed in 7ms (DB: 0) | 302 Found [http://test.host/slot_contents/37]
+
+
+Processing SlotContentsController#destroy (for 0.0.0.0 at 2009-07-03 21:51:25) [DELETE]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/slot_contents
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/slot_contents/1]
+
+
+Processing SlotContentsController#update (for 0.0.0.0 at 2009-07-03 21:51:25) [PUT]
+  Parameters: {"slot_content"=>{"these"=>"params"}, "id"=>"37"}
+Rendering template within layouts/slot_contents
+Rendering slot_contents/edit
+Completed in 9ms (View: 5, DB: 0) | 200 OK [http://test.host/slot_contents/37?slot_content%5Bthese%5D=params]
+
+
+Processing SlotContentsController#update (for 0.0.0.0 at 2009-07-03 21:51:25) [PUT]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/slot_contents
+Rendering slot_contents/edit
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/slot_contents/1]
+
+
+Processing SlotContentsController#update (for 0.0.0.0 at 2009-07-03 21:51:25) [PUT]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/slot_contents
+Rendering slot_contents/edit
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/slot_contents/1]
+
+
+Processing SlotContentsController#update (for 0.0.0.0 at 2009-07-03 21:51:25) [PUT]
+  Parameters: {"slot_content"=>{"these"=>"params"}, "id"=>"37"}
+Rendering template within layouts/slot_contents
+Rendering slot_contents/edit
+Completed in 6ms (View: 1, DB: 0) | 200 OK [http://test.host/slot_contents/37?slot_content%5Bthese%5D=params]
+
+
+Processing SlotContentsController#update (for 0.0.0.0 at 2009-07-03 21:51:25) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to #[SlotContent:0xfb9686 @name="SlotContent_1073"]
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/slot_contents/1]
+
+
+Processing SlotContentsController#update (for 0.0.0.0 at 2009-07-03 21:51:25) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to #[SlotContent:0xfb30e2 @name="SlotContent_1074"]
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/slot_contents/1]
+
+
+Processing SlotContentsController#create (for 0.0.0.0 at 2009-07-03 21:51:25) [POST]
+  Parameters: {"slot_content"=>{"these"=>"params"}}
+Rendering template within layouts/slot_contents
+Rendering slot_contents/new
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/slot_contents?slot_content%5Bthese%5D=params]
+
+
+Processing SlotContentsController#create (for 0.0.0.0 at 2009-07-03 21:51:25) [POST]
+  Parameters: {"slot_content"=>{}}
+Rendering template within layouts/slot_contents
+Rendering slot_contents/new
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/slot_contents?]
+
+
+Processing SlotContentsController#create (for 0.0.0.0 at 2009-07-03 21:51:25) [POST]
+  Parameters: {"slot_content"=>{"these"=>"params"}}
+Redirected to #[SlotContent:0xfa096a @name="SlotContent_1077"]
+Completed in 3ms (DB: 0) | 302 Found [http://test.host/slot_contents?slot_content%5Bthese%5D=params]
+
+
+Processing SlotContentsController#create (for 0.0.0.0 at 2009-07-03 21:51:25) [POST]
+  Parameters: {"slot_content"=>{}}
+Redirected to #[SlotContent:0xf9a272 @name="SlotContent_1078"]
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/slot_contents?]
+
+
+Processing SlotContentsController#edit (for 0.0.0.0 at 2009-07-03 21:51:25) [GET]
+  Parameters: {"id"=>"37"}
+Rendering template within layouts/slot_contents
+Rendering slot_contents/edit
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/slot_contents/37/edit]
+
+
+Processing SlotContentsController#new (for 0.0.0.0 at 2009-07-03 21:51:25) [GET]
+Rendering template within layouts/slot_contents
+Rendering slot_contents/new
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/slot_contents/new]
+
+
+Processing SlotContentsController#show (for 0.0.0.0 at 2009-07-03 21:51:25) [GET]
+  Parameters: {"id"=>"37"}
+Rendering template within layouts/slot_contents
+Rendering slot_contents/show
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/slot_contents/37]
+
+
+Processing SlotContentsController#index (for 0.0.0.0 at 2009-07-03 21:51:25) [GET]
+Rendering template within layouts/slot_contents
+Rendering slot_contents/index
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://test.host/slot_contents]
+Rendering slot_contents/new.html.erb
+Rendering slot_contents/edit.html.erb
+** has_many_polymorphs: rails environment detected
+** has_many_polymorphs: loaded ok
+** has_many_polymorphs: autoload hook invoked
+** has_many_polymorphs: preloading parent model Slot
+** has_many_polymorphs: associating Slot.slot_items
+** has_many_polymorphs: autoload hook invoked
+** has_many_polymorphs: preloading parent model Slot
+** has_many_polymorphs: rails environment detected
+** has_many_polymorphs: loaded ok
+** has_many_polymorphs: autoload hook invoked
+** has_many_polymorphs: preloading parent model Slot
+** has_many_polymorphs: associating Slot.slot_items
+** has_many_polymorphs: autoload hook invoked
+** has_many_polymorphs: preloading parent model Slot
+  [4;36;1mSlot Create (142.7ms)[0m   [0;1mINSERT INTO "slots" ("name", "updated_at", "created_at") VALUES(NULL, '2009-07-04 04:53:29', '2009-07-04 04:53:29')[0m
+  [4;35;1mContent Create (0.3ms)[0m   [0mINSERT INTO "contents" ("updated_at", "type", "created_at") VALUES('2009-07-04 04:53:29', NULL, '2009-07-04 04:53:29')[0m
+  [4;36;1mSlotContent Create (0.2ms)[0m   [0;1mINSERT INTO "slot_contents" ("updated_at", "slot_id", "slot_item_type", "slot_item_id", "created_at") VALUES('2009-07-04 04:53:29', 1, 'Content', 1, '2009-07-04 04:53:29')[0m
+** has_many_polymorphs: rails environment detected
+** has_many_polymorphs: loaded ok
+** has_many_polymorphs: autoload hook invoked
+** has_many_polymorphs: preloading parent model Slot
+** has_many_polymorphs: associating Slot.slot_items
+** has_many_polymorphs: autoload hook invoked
+** has_many_polymorphs: preloading parent model Slot
+
+
+Processing DesignsController#destroy (for 0.0.0.0 at 2009-07-03 21:53:33) [DELETE]
+  Parameters: {"id"=>"37"}
+Redirected to http://test.host/designs
+Completed in 4ms (DB: 0) | 302 Found [http://test.host/designs/37]
+
+
+Processing DesignsController#destroy (for 0.0.0.0 at 2009-07-03 21:53:33) [DELETE]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/designs
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/designs/1]
+
+
+Processing DesignsController#update (for 0.0.0.0 at 2009-07-03 21:53:33) [PUT]
+  Parameters: {"design"=>{"these"=>"params"}, "id"=>"37"}
+Rendering template within layouts/designs
+Rendering designs/edit
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/designs/37?design%5Bthese%5D=params]
+
+
+Processing DesignsController#update (for 0.0.0.0 at 2009-07-03 21:53:33) [PUT]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/designs
+Rendering designs/edit
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/designs/1]
+
+
+Processing DesignsController#update (for 0.0.0.0 at 2009-07-03 21:53:33) [PUT]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/designs
+Rendering designs/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/designs/1]
+
+
+Processing DesignsController#update (for 0.0.0.0 at 2009-07-03 21:53:33) [PUT]
+  Parameters: {"design"=>{"these"=>"params"}, "id"=>"37"}
+Rendering template within layouts/designs
+Rendering designs/edit
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/designs/37?design%5Bthese%5D=params]
+
+
+Processing DesignsController#update (for 0.0.0.0 at 2009-07-03 21:53:33) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to #[Design:0x103ca9a @name="Design_1007"]
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/designs/1]
+
+
+Processing DesignsController#update (for 0.0.0.0 at 2009-07-03 21:53:33) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to #[Design:0x10362da @name="Design_1008"]
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/designs/1]
+
+
+Processing DesignsController#create (for 0.0.0.0 at 2009-07-03 21:53:33) [POST]
+  Parameters: {"design"=>{"these"=>"params"}}
+Rendering template within layouts/designs
+Rendering designs/new
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/designs?design%5Bthese%5D=params]
+
+
+Processing DesignsController#create (for 0.0.0.0 at 2009-07-03 21:53:33) [POST]
+  Parameters: {"design"=>{}}
+Rendering template within layouts/designs
+Rendering designs/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/designs?]
+
+
+Processing DesignsController#create (for 0.0.0.0 at 2009-07-03 21:53:33) [POST]
+  Parameters: {"design"=>{"these"=>"params"}}
+Redirected to #[Design:0x1023b76 @name="Design_1011"]
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/designs?design%5Bthese%5D=params]
+
+
+Processing DesignsController#create (for 0.0.0.0 at 2009-07-03 21:53:33) [POST]
+  Parameters: {"design"=>{}}
+Redirected to #[Design:0x101d488 @name="Design_1012"]
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/designs?]
+
+
+Processing DesignsController#edit (for 0.0.0.0 at 2009-07-03 21:53:33) [GET]
+  Parameters: {"id"=>"37"}
+Rendering template within layouts/designs
+Rendering designs/edit
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/designs/37/edit]
+
+
+Processing DesignsController#new (for 0.0.0.0 at 2009-07-03 21:53:33) [GET]
+Rendering template within layouts/designs
+Rendering designs/new
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/designs/new]
+
+
+Processing DesignsController#show (for 0.0.0.0 at 2009-07-03 21:53:33) [GET]
+  Parameters: {"id"=>"37"}
+Rendering template within layouts/designs
+Rendering designs/show
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/designs/37]
+
+
+Processing DesignsController#index (for 0.0.0.0 at 2009-07-03 21:53:33) [GET]
+Rendering template within layouts/designs
+Rendering designs/index
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/designs]
+Rendering designs/edit.html.erb
+  [4;36;1mDesign Create (0.8ms)[0m   [0;1mINSERT INTO "designs" ("name", "updated_at", "type", "created_at") VALUES(NULL, '2009-07-04 04:53:33', NULL, '2009-07-04 04:53:33')[0m
+Rendering designs/index.html.erb
+Rendering designs/new.html.erb
+Rendering designs/show.html.erb
+Rendering slots/edit.html.erb
+
+
+Processing SlotsController#destroy (for 0.0.0.0 at 2009-07-03 21:53:34) [DELETE]
+  Parameters: {"id"=>"37"}
+Redirected to http://test.host/slots
+Completed in 5ms (DB: 0) | 302 Found [http://test.host/slots/37]
+
+
+Processing SlotsController#destroy (for 0.0.0.0 at 2009-07-03 21:53:34) [DELETE]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/slots
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/slots/1]
+
+
+Processing SlotsController#update (for 0.0.0.0 at 2009-07-03 21:53:34) [PUT]
+  Parameters: {"id"=>"37", "slot"=>{"these"=>"params"}}
+Rendering template within layouts/slots
+Rendering slots/edit
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/slots/37?slot%5Bthese%5D=params]
+
+
+Processing SlotsController#update (for 0.0.0.0 at 2009-07-03 21:53:34) [PUT]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/slots
+Rendering slots/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/slots/1]
+
+
+Processing SlotsController#update (for 0.0.0.0 at 2009-07-03 21:53:34) [PUT]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/slots
+Rendering slots/edit
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/slots/1]
+
+
+Processing SlotsController#update (for 0.0.0.0 at 2009-07-03 21:53:34) [PUT]
+  Parameters: {"id"=>"37", "slot"=>{"these"=>"params"}}
+Rendering template within layouts/slots
+Rendering slots/edit
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/slots/37?slot%5Bthese%5D=params]
+
+
+Processing SlotsController#update (for 0.0.0.0 at 2009-07-03 21:53:34) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to #[Slot:0x1229074 @name="Slot_1029"]
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/slots/1]
+
+
+Processing SlotsController#update (for 0.0.0.0 at 2009-07-03 21:53:34) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to #[Slot:0x120c500 @name="Slot_1030"]
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/slots/1]
+
+
+Processing SlotsController#create (for 0.0.0.0 at 2009-07-03 21:53:34) [POST]
+  Parameters: {"slot"=>{"these"=>"params"}}
+Rendering template within layouts/slots
+Rendering slots/new
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/slots?slot%5Bthese%5D=params]
+
+
+Processing SlotsController#create (for 0.0.0.0 at 2009-07-03 21:53:34) [POST]
+  Parameters: {"slot"=>{}}
+Rendering template within layouts/slots
+Rendering slots/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/slots?]
+
+
+Processing SlotsController#create (for 0.0.0.0 at 2009-07-03 21:53:34) [POST]
+  Parameters: {"slot"=>{"these"=>"params"}}
+Redirected to #[Slot:0x115efd6 @name="Slot_1033"]
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/slots?slot%5Bthese%5D=params]
+
+
+Processing SlotsController#create (for 0.0.0.0 at 2009-07-03 21:53:34) [POST]
+  Parameters: {"slot"=>{}}
+Redirected to #[Slot:0x1147cd2 @name="Slot_1034"]
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/slots?]
+
+
+Processing SlotsController#edit (for 0.0.0.0 at 2009-07-03 21:53:34) [GET]
+  Parameters: {"id"=>"37"}
+Rendering template within layouts/slots
+Rendering slots/edit
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/slots/37/edit]
+
+
+Processing SlotsController#new (for 0.0.0.0 at 2009-07-03 21:53:34) [GET]
+Rendering template within layouts/slots
+Rendering slots/new
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/slots/new]
+
+
+Processing SlotsController#show (for 0.0.0.0 at 2009-07-03 21:53:34) [GET]
+  Parameters: {"id"=>"37"}
+Rendering template within layouts/slots
+Rendering slots/show
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/slots/37]
+
+
+Processing SlotsController#index (for 0.0.0.0 at 2009-07-03 21:53:34) [GET]
+Rendering template within layouts/slots
+Rendering slots/index
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/slots]
+Rendering slots/index.html.erb
+Rendering slots/new.html.erb
+Rendering slots/show.html.erb
+  [4;35;1mSlot Create (5.1ms)[0m   [0mINSERT INTO "slots" ("name", "updated_at", "created_at") VALUES(NULL, '2009-07-04 04:53:34', '2009-07-04 04:53:34')[0m
+Rendering contents/index.html.erb
+Rendering contents/new.html.erb
+
+
+Processing ContentsController#destroy (for 0.0.0.0 at 2009-07-03 21:53:34) [DELETE]
+  Parameters: {"id"=>"37"}
+Redirected to http://test.host/contents
+Completed in 4ms (DB: 0) | 302 Found [http://test.host/contents/37]
+
+
+Processing ContentsController#destroy (for 0.0.0.0 at 2009-07-03 21:53:34) [DELETE]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/contents
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/contents/1]
+
+
+Processing ContentsController#update (for 0.0.0.0 at 2009-07-03 21:53:34) [PUT]
+  Parameters: {"id"=>"37", "content"=>{"these"=>"params"}}
+Rendering template within layouts/contents
+Rendering contents/edit
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/contents/37?content%5Bthese%5D=params]
+
+
+Processing ContentsController#update (for 0.0.0.0 at 2009-07-03 21:53:34) [PUT]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/contents
+Rendering contents/edit
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/contents/1]
+
+
+Processing ContentsController#update (for 0.0.0.0 at 2009-07-03 21:53:34) [PUT]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/contents
+Rendering contents/edit
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/contents/1]
+
+
+Processing ContentsController#update (for 0.0.0.0 at 2009-07-03 21:53:34) [PUT]
+  Parameters: {"id"=>"37", "content"=>{"these"=>"params"}}
+Rendering template within layouts/contents
+Rendering contents/edit
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/contents/37?content%5Bthese%5D=params]
+
+
+Processing ContentsController#update (for 0.0.0.0 at 2009-07-03 21:53:34) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to #[Content:0x103ff92 @name="Content_1052"]
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/contents/1]
+
+
+Processing ContentsController#update (for 0.0.0.0 at 2009-07-03 21:53:34) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to #[Content:0x10399d0 @name="Content_1053"]
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/contents/1]
+
+
+Processing ContentsController#create (for 0.0.0.0 at 2009-07-03 21:53:34) [POST]
+  Parameters: {"content"=>{"these"=>"params"}}
+Rendering template within layouts/contents
+Rendering contents/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/contents?content%5Bthese%5D=params]
+
+
+Processing ContentsController#create (for 0.0.0.0 at 2009-07-03 21:53:34) [POST]
+  Parameters: {"content"=>{}}
+Rendering template within layouts/contents
+Rendering contents/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/contents?]
+
+
+Processing ContentsController#create (for 0.0.0.0 at 2009-07-03 21:53:34) [POST]
+  Parameters: {"content"=>{"these"=>"params"}}
+Redirected to #[Content:0x10270dc @name="Content_1056"]
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/contents?content%5Bthese%5D=params]
+
+
+Processing ContentsController#create (for 0.0.0.0 at 2009-07-03 21:53:34) [POST]
+  Parameters: {"content"=>{}}
+Redirected to #[Content:0x102093a @name="Content_1057"]
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/contents?]
+
+
+Processing ContentsController#edit (for 0.0.0.0 at 2009-07-03 21:53:34) [GET]
+  Parameters: {"id"=>"37"}
+Rendering template within layouts/contents
+Rendering contents/edit
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/contents/37/edit]
+
+
+Processing ContentsController#new (for 0.0.0.0 at 2009-07-03 21:53:34) [GET]
+Rendering template within layouts/contents
+Rendering contents/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/contents/new]
+
+
+Processing ContentsController#show (for 0.0.0.0 at 2009-07-03 21:53:34) [GET]
+  Parameters: {"id"=>"37"}
+Rendering template within layouts/contents
+Rendering contents/show
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://test.host/contents/37]
+
+
+Processing ContentsController#index (for 0.0.0.0 at 2009-07-03 21:53:34) [GET]
+Rendering template within layouts/contents
+Rendering contents/index
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/contents]
+Rendering contents/show.html.erb
+Rendering contents/edit.html.erb
+  [4;36;1mContent Create (3.8ms)[0m   [0;1mINSERT INTO "contents" ("updated_at", "type", "created_at") VALUES('2009-07-04 04:53:34', NULL, '2009-07-04 04:53:34')[0m
+Rendering slot_contents/show.html.erb
+
+
+Processing SlotContentsController#destroy (for 0.0.0.0 at 2009-07-03 21:53:34) [DELETE]
+  Parameters: {"id"=>"37"}
+Redirected to http://test.host/slot_contents
+Completed in 4ms (DB: 0) | 302 Found [http://test.host/slot_contents/37]
+
+
+Processing SlotContentsController#destroy (for 0.0.0.0 at 2009-07-03 21:53:34) [DELETE]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/slot_contents
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/slot_contents/1]
+
+
+Processing SlotContentsController#update (for 0.0.0.0 at 2009-07-03 21:53:34) [PUT]
+  Parameters: {"slot_content"=>{"these"=>"params"}, "id"=>"37"}
+Rendering template within layouts/slot_contents
+Rendering slot_contents/edit
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://test.host/slot_contents/37?slot_content%5Bthese%5D=params]
+
+
+Processing SlotContentsController#update (for 0.0.0.0 at 2009-07-03 21:53:34) [PUT]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/slot_contents
+Rendering slot_contents/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/slot_contents/1]
+
+
+Processing SlotContentsController#update (for 0.0.0.0 at 2009-07-03 21:53:34) [PUT]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/slot_contents
+Rendering slot_contents/edit
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/slot_contents/1]
+
+
+Processing SlotContentsController#update (for 0.0.0.0 at 2009-07-03 21:53:34) [PUT]
+  Parameters: {"slot_content"=>{"these"=>"params"}, "id"=>"37"}
+Rendering template within layouts/slot_contents
+Rendering slot_contents/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/slot_contents/37?slot_content%5Bthese%5D=params]
+
+
+Processing SlotContentsController#update (for 0.0.0.0 at 2009-07-03 21:53:34) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to #[SlotContent:0xfbd86c @name="SlotContent_1071"]
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/slot_contents/1]
+
+
+Processing SlotContentsController#update (for 0.0.0.0 at 2009-07-03 21:53:34) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to #[SlotContent:0xfb7052 @name="SlotContent_1072"]
+Completed in 4ms (DB: 0) | 302 Found [http://test.host/slot_contents/1]
+
+
+Processing SlotContentsController#create (for 0.0.0.0 at 2009-07-03 21:53:34) [POST]
+  Parameters: {"slot_content"=>{"these"=>"params"}}
+Rendering template within layouts/slot_contents
+Rendering slot_contents/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/slot_contents?slot_content%5Bthese%5D=params]
+
+
+Processing SlotContentsController#create (for 0.0.0.0 at 2009-07-03 21:53:34) [POST]
+  Parameters: {"slot_content"=>{}}
+Rendering template within layouts/slot_contents
+Rendering slot_contents/new
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://test.host/slot_contents?]
+
+
+Processing SlotContentsController#create (for 0.0.0.0 at 2009-07-03 21:53:34) [POST]
+  Parameters: {"slot_content"=>{"these"=>"params"}}
+Redirected to #[SlotContent:0xfa48d0 @name="SlotContent_1075"]
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/slot_contents?slot_content%5Bthese%5D=params]
+
+
+Processing SlotContentsController#create (for 0.0.0.0 at 2009-07-03 21:53:34) [POST]
+  Parameters: {"slot_content"=>{}}
+Redirected to #[SlotContent:0xf9e1d8 @name="SlotContent_1076"]
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/slot_contents?]
+
+
+Processing SlotContentsController#edit (for 0.0.0.0 at 2009-07-03 21:53:34) [GET]
+  Parameters: {"id"=>"37"}
+Rendering template within layouts/slot_contents
+Rendering slot_contents/edit
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/slot_contents/37/edit]
+
+
+Processing SlotContentsController#new (for 0.0.0.0 at 2009-07-03 21:53:34) [GET]
+Rendering template within layouts/slot_contents
+Rendering slot_contents/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/slot_contents/new]
+
+
+Processing SlotContentsController#show (for 0.0.0.0 at 2009-07-03 21:53:34) [GET]
+  Parameters: {"id"=>"37"}
+Rendering template within layouts/slot_contents
+Rendering slot_contents/show
+Completed in 2ms (View: 0, DB: 0) | 200 OK [http://test.host/slot_contents/37]
+
+
+Processing SlotContentsController#index (for 0.0.0.0 at 2009-07-03 21:53:34) [GET]
+Rendering template within layouts/slot_contents
+Rendering slot_contents/index
+Completed in 8ms (View: 1, DB: 0) | 200 OK [http://test.host/slot_contents]
+Rendering slot_contents/new.html.erb
+Rendering slot_contents/edit.html.erb
+Rendering slot_contents/index.html.erb
+  [4;35;1mSlot Create (118.3ms)[0m   [0mINSERT INTO "slots" ("name", "updated_at", "created_at") VALUES(NULL, '2009-07-04 04:53:34', '2009-07-04 04:53:34')[0m
+  [4;36;1mContent Create (0.7ms)[0m   [0;1mINSERT INTO "contents" ("updated_at", "type", "created_at") VALUES('2009-07-04 04:53:35', NULL, '2009-07-04 04:53:35')[0m
+  [4;35;1mSlotContent Create (0.2ms)[0m   [0mINSERT INTO "slot_contents" ("updated_at", "slot_id", "slot_item_type", "slot_item_id", "created_at") VALUES('2009-07-04 04:53:35', 1, 'Content', 1, '2009-07-04 04:53:35')[0m
+** has_many_polymorphs: rails environment detected
+** has_many_polymorphs: loaded ok
+** has_many_polymorphs: autoload hook invoked
+** has_many_polymorphs: preloading parent model Slot
+** has_many_polymorphs: associating Slot.slot_items
+** has_many_polymorphs: autoload hook invoked
+** has_many_polymorphs: preloading parent model Slot
+  [4;36;1mSlot Create (0.7ms)[0m   [0;1mINSERT INTO "slots" ("name", "updated_at", "created_at") VALUES(NULL, '2009-07-04 04:55:23', '2009-07-04 04:55:23')[0m
+  [4;35;1mContent Create (0.2ms)[0m   [0mINSERT INTO "contents" ("updated_at", "type", "created_at") VALUES('2009-07-04 04:55:23', NULL, '2009-07-04 04:55:23')[0m
+  [4;36;1mSlotContent Create (0.2ms)[0m   [0;1mINSERT INTO "slot_contents" ("updated_at", "slot_id", "slot_item_type", "slot_item_id", "created_at") VALUES('2009-07-04 04:55:23', 1, 'Content', 1, '2009-07-04 04:55:23')[0m
+  [4;35;1mSlot Create (0.6ms)[0m   [0mINSERT INTO "slots" ("name", "updated_at", "created_at") VALUES(NULL, '2009-07-04 04:55:23', '2009-07-04 04:55:23')[0m
+  [4;36;1mDesign Create (0.2ms)[0m   [0;1mINSERT INTO "designs" ("name", "updated_at", "type", "created_at") VALUES(NULL, '2009-07-04 04:55:23', NULL, '2009-07-04 04:55:23')[0m
+  [4;35;1mSlotContent Create (0.2ms)[0m   [0mINSERT INTO "slot_contents" ("updated_at", "slot_id", "slot_item_type", "slot_item_id", "created_at") VALUES('2009-07-04 04:55:23', 1, 'Design', 1, '2009-07-04 04:55:23')[0m
+  [4;36;1mContent Create (0.1ms)[0m   [0;1mINSERT INTO "contents" ("updated_at", "type", "created_at") VALUES('2009-07-04 04:55:23', NULL, '2009-07-04 04:55:23')[0m
+  [4;35;1mSlotContent Create (0.2ms)[0m   [0mINSERT INTO "slot_contents" ("updated_at", "slot_id", "slot_item_type", "slot_item_id", "created_at") VALUES('2009-07-04 04:55:23', 1, 'Content', 1, '2009-07-04 04:55:23')[0m
+  [4;36;1mSlotContent Load (1.3ms)[0m   [0;1mSELECT 'Slot' AS polymorphic_parent_class, 'slot_items' AS polymorphic_association_id, contents.created_at AS t0_r2, contents.id AS t0_r0, contents.type AS t0_r1, contents.updated_at AS t0_r3, designs.created_at AS t1_r3, designs.id AS t1_r0, designs.name AS t1_r2, designs.type AS t1_r1, designs.updated_at AS t1_r4, slot_contents.created_at AS t2_r4, slot_contents.id AS t2_r0, slot_contents.slot_id AS t2_r1, slot_contents.slot_item_id AS t2_r2, slot_contents.slot_item_type AS t2_r3, slot_contents.updated_at AS t2_r5 FROM "slot_contents" JOIN "slots" AS polymorphic_parent ON "slot_contents".slot_id = polymorphic_parent.id LEFT JOIN "designs" ON "slot_contents".slot_item_id = "designs".id AND "slot_contents".slot_item_type = 'Design' LEFT JOIN "contents" ON "slot_contents".slot_item_id = "contents".id AND "slot_contents".slot_item_type = 'Content' WHERE (("slot_contents".slot_id = 1)) [0m
+** has_many_polymorphs: rails environment detected
+** has_many_polymorphs: loaded ok
+** has_many_polymorphs: autoload hook invoked
+** has_many_polymorphs: preloading parent model Slot
+** has_many_polymorphs: associating Slot.slot_items
+** has_many_polymorphs: autoload hook invoked
+** has_many_polymorphs: preloading parent model Slot
+  [4;36;1mDesign Create (0.7ms)[0m   [0;1mINSERT INTO "designs" ("name", "updated_at", "type", "created_at") VALUES(NULL, '2009-07-04 04:56:26', NULL, '2009-07-04 04:56:26')[0m
+** has_many_polymorphs: rails environment detected
+** has_many_polymorphs: loaded ok
+** has_many_polymorphs: autoload hook invoked
+** has_many_polymorphs: preloading parent model Slot
+** has_many_polymorphs: associating Slot.slot_items
+** has_many_polymorphs: autoload hook invoked
+** has_many_polymorphs: preloading parent model Slot
+  [4;36;1mSlot Create (0.8ms)[0m   [0;1mINSERT INTO "slots" ("name", "updated_at", "created_at") VALUES(NULL, '2009-07-04 04:57:48', '2009-07-04 04:57:48')[0m
+  [4;35;1mContent Create (0.3ms)[0m   [0mINSERT INTO "contents" ("updated_at", "type", "created_at") VALUES('2009-07-04 04:57:48', NULL, '2009-07-04 04:57:48')[0m
+  [4;36;1mSlotContent Create (0.2ms)[0m   [0;1mINSERT INTO "slot_contents" ("updated_at", "slot_id", "slot_item_type", "slot_item_id", "created_at") VALUES('2009-07-04 04:57:48', 1, 'Content', 1, '2009-07-04 04:57:48')[0m
+  [4;35;1mSlot Create (0.6ms)[0m   [0mINSERT INTO "slots" ("name", "updated_at", "created_at") VALUES(NULL, '2009-07-04 04:57:48', '2009-07-04 04:57:48')[0m
+  [4;36;1mDesign Create (0.3ms)[0m   [0;1mINSERT INTO "designs" ("name", "updated_at", "type", "created_at") VALUES(NULL, '2009-07-04 04:57:48', NULL, '2009-07-04 04:57:48')[0m
+  [4;35;1mSlotContent Create (0.2ms)[0m   [0mINSERT INTO "slot_contents" ("updated_at", "slot_id", "slot_item_type", "slot_item_id", "created_at") VALUES('2009-07-04 04:57:48', 1, 'Design', 1, '2009-07-04 04:57:48')[0m
+  [4;36;1mContent Create (0.2ms)[0m   [0;1mINSERT INTO "contents" ("updated_at", "type", "created_at") VALUES('2009-07-04 04:57:48', NULL, '2009-07-04 04:57:48')[0m
+  [4;35;1mSlotContent Create (0.2ms)[0m   [0mINSERT INTO "slot_contents" ("updated_at", "slot_id", "slot_item_type", "slot_item_id", "created_at") VALUES('2009-07-04 04:57:48', 1, 'Content', 1, '2009-07-04 04:57:48')[0m
+  [4;36;1mSlotContent Load (5.3ms)[0m   [0;1mSELECT 'Slot' AS polymorphic_parent_class, 'slot_items' AS polymorphic_association_id, contents.created_at AS t0_r2, contents.id AS t0_r0, contents.type AS t0_r1, contents.updated_at AS t0_r3, designs.created_at AS t1_r3, designs.id AS t1_r0, designs.name AS t1_r2, designs.type AS t1_r1, designs.updated_at AS t1_r4, slot_contents.created_at AS t2_r4, slot_contents.id AS t2_r0, slot_contents.slot_id AS t2_r1, slot_contents.slot_item_id AS t2_r2, slot_contents.slot_item_type AS t2_r3, slot_contents.updated_at AS t2_r5 FROM "slot_contents" JOIN "slots" AS polymorphic_parent ON "slot_contents".slot_id = polymorphic_parent.id LEFT JOIN "designs" ON "slot_contents".slot_item_id = "designs".id AND "slot_contents".slot_item_type = 'Design' LEFT JOIN "contents" ON "slot_contents".slot_item_id = "contents".id AND "slot_contents".slot_item_type = 'Content' WHERE (("slot_contents".slot_id = 1)) [0m
+  [4;35;1mSlot Create (0.7ms)[0m   [0mINSERT INTO "slots" ("name", "updated_at", "created_at") VALUES(NULL, '2009-07-04 04:57:48', '2009-07-04 04:57:48')[0m
+  [4;36;1mDesign Create (0.2ms)[0m   [0;1mINSERT INTO "designs" ("name", "updated_at", "type", "created_at") VALUES(NULL, '2009-07-04 04:57:48', 'DesignTypeA', '2009-07-04 04:57:48')[0m
+  [4;35;1mSlotContent Create (0.2ms)[0m   [0mINSERT INTO "slot_contents" ("updated_at", "slot_id", "slot_item_type", "slot_item_id", "created_at") VALUES('2009-07-04 04:57:48', 1, 'Design', 1, '2009-07-04 04:57:48')[0m
+  [4;36;1mDesign Create (0.2ms)[0m   [0;1mINSERT INTO "designs" ("name", "updated_at", "type", "created_at") VALUES(NULL, '2009-07-04 04:57:48', 'DesignTypeB', '2009-07-04 04:57:48')[0m
+  [4;35;1mSlotContent Create (0.3ms)[0m   [0mINSERT INTO "slot_contents" ("updated_at", "slot_id", "slot_item_type", "slot_item_id", "created_at") VALUES('2009-07-04 04:57:48', 1, 'Design', 2, '2009-07-04 04:57:48')[0m
+  [4;36;1mSlotContent Load (1.0ms)[0m   [0;1mSELECT 'Slot' AS polymorphic_parent_class, 'slot_items' AS polymorphic_association_id, contents.created_at AS t0_r2, contents.id AS t0_r0, contents.type AS t0_r1, contents.updated_at AS t0_r3, designs.created_at AS t1_r3, designs.id AS t1_r0, designs.name AS t1_r2, designs.type AS t1_r1, designs.updated_at AS t1_r4, slot_contents.created_at AS t2_r4, slot_contents.id AS t2_r0, slot_contents.slot_id AS t2_r1, slot_contents.slot_item_id AS t2_r2, slot_contents.slot_item_type AS t2_r3, slot_contents.updated_at AS t2_r5 FROM "slot_contents" JOIN "slots" AS polymorphic_parent ON "slot_contents".slot_id = polymorphic_parent.id LEFT JOIN "designs" ON "slot_contents".slot_item_id = "designs".id AND "slot_contents".slot_item_type = 'Design' LEFT JOIN "contents" ON "slot_contents".slot_item_id = "contents".id AND "slot_contents".slot_item_type = 'Content' WHERE (("slot_contents".slot_id = 1)) [0m
+** has_many_polymorphs: rails environment detected
+** has_many_polymorphs: loaded ok
+** has_many_polymorphs: autoload hook invoked
+** has_many_polymorphs: preloading parent model Slot
+** has_many_polymorphs: associating Slot.slot_items
+** has_many_polymorphs: autoload hook invoked
+** has_many_polymorphs: preloading parent model Slot
+  [4;36;1mContent Create (0.7ms)[0m   [0;1mINSERT INTO "contents" ("updated_at", "type", "created_at") VALUES('2009-07-04 04:58:39', NULL, '2009-07-04 04:58:39')[0m
+** has_many_polymorphs: rails environment detected
+** has_many_polymorphs: loaded ok
+** has_many_polymorphs: autoload hook invoked
+** has_many_polymorphs: preloading parent model Slot
+** has_many_polymorphs: associating Slot.slot_items
+** has_many_polymorphs: autoload hook invoked
+** has_many_polymorphs: preloading parent model Slot
+  [4;36;1mSlot Create (0.7ms)[0m   [0;1mINSERT INTO "slots" ("name", "updated_at", "created_at") VALUES(NULL, '2009-07-04 04:59:20', '2009-07-04 04:59:20')[0m
+  [4;35;1mContent Create (0.3ms)[0m   [0mINSERT INTO "contents" ("updated_at", "type", "created_at") VALUES('2009-07-04 04:59:20', NULL, '2009-07-04 04:59:20')[0m
+  [4;36;1mSlotContent Create (0.2ms)[0m   [0;1mINSERT INTO "slot_contents" ("updated_at", "slot_id", "slot_item_type", "slot_item_id", "created_at") VALUES('2009-07-04 04:59:20', 1, 'Content', 1, '2009-07-04 04:59:20')[0m
+  [4;35;1mSlot Create (3.0ms)[0m   [0mINSERT INTO "slots" ("name", "updated_at", "created_at") VALUES(NULL, '2009-07-04 04:59:20', '2009-07-04 04:59:20')[0m
+  [4;36;1mDesign Create (0.5ms)[0m   [0;1mINSERT INTO "designs" ("name", "updated_at", "type", "created_at") VALUES(NULL, '2009-07-04 04:59:20', NULL, '2009-07-04 04:59:20')[0m
+  [4;35;1mSlotContent Create (0.3ms)[0m   [0mINSERT INTO "slot_contents" ("updated_at", "slot_id", "slot_item_type", "slot_item_id", "created_at") VALUES('2009-07-04 04:59:20', 1, 'Design', 1, '2009-07-04 04:59:20')[0m
+  [4;36;1mContent Create (0.2ms)[0m   [0;1mINSERT INTO "contents" ("updated_at", "type", "created_at") VALUES('2009-07-04 04:59:20', NULL, '2009-07-04 04:59:20')[0m
+  [4;35;1mSlotContent Create (0.2ms)[0m   [0mINSERT INTO "slot_contents" ("updated_at", "slot_id", "slot_item_type", "slot_item_id", "created_at") VALUES('2009-07-04 04:59:20', 1, 'Content', 1, '2009-07-04 04:59:20')[0m
+  [4;36;1mSlotContent Load (1.1ms)[0m   [0;1mSELECT 'Slot' AS polymorphic_parent_class, 'slot_items' AS polymorphic_association_id, contents.created_at AS t0_r2, contents.id AS t0_r0, contents.type AS t0_r1, contents.updated_at AS t0_r3, designs.created_at AS t1_r3, designs.id AS t1_r0, designs.name AS t1_r2, designs.type AS t1_r1, designs.updated_at AS t1_r4, slot_contents.created_at AS t2_r4, slot_contents.id AS t2_r0, slot_contents.slot_id AS t2_r1, slot_contents.slot_item_id AS t2_r2, slot_contents.slot_item_type AS t2_r3, slot_contents.updated_at AS t2_r5 FROM "slot_contents" JOIN "slots" AS polymorphic_parent ON "slot_contents".slot_id = polymorphic_parent.id LEFT JOIN "designs" ON "slot_contents".slot_item_id = "designs".id AND "slot_contents".slot_item_type = 'Design' LEFT JOIN "contents" ON "slot_contents".slot_item_id = "contents".id AND "slot_contents".slot_item_type = 'Content' WHERE (("slot_contents".slot_id = 1)) [0m
+  [4;35;1mSlot Create (0.5ms)[0m   [0mINSERT INTO "slots" ("name", "updated_at", "created_at") VALUES(NULL, '2009-07-04 04:59:20', '2009-07-04 04:59:20')[0m
+  [4;36;1mDesign Create (0.2ms)[0m   [0;1mINSERT INTO "designs" ("name", "updated_at", "type", "created_at") VALUES(NULL, '2009-07-04 04:59:20', 'DesignTypeA', '2009-07-04 04:59:20')[0m
+  [4;35;1mSlotContent Create (0.2ms)[0m   [0mINSERT INTO "slot_contents" ("updated_at", "slot_id", "slot_item_type", "slot_item_id", "created_at") VALUES('2009-07-04 04:59:20', 1, 'Design', 1, '2009-07-04 04:59:20')[0m
+  [4;36;1mDesign Create (0.2ms)[0m   [0;1mINSERT INTO "designs" ("name", "updated_at", "type", "created_at") VALUES(NULL, '2009-07-04 04:59:20', 'DesignTypeB', '2009-07-04 04:59:20')[0m
+  [4;35;1mSlotContent Create (0.2ms)[0m   [0mINSERT INTO "slot_contents" ("updated_at", "slot_id", "slot_item_type", "slot_item_id", "created_at") VALUES('2009-07-04 04:59:20', 1, 'Design', 2, '2009-07-04 04:59:20')[0m
+  [4;36;1mSlotContent Load (1.1ms)[0m   [0;1mSELECT 'Slot' AS polymorphic_parent_class, 'slot_items' AS polymorphic_association_id, contents.created_at AS t0_r2, contents.id AS t0_r0, contents.type AS t0_r1, contents.updated_at AS t0_r3, designs.created_at AS t1_r3, designs.id AS t1_r0, designs.name AS t1_r2, designs.type AS t1_r1, designs.updated_at AS t1_r4, slot_contents.created_at AS t2_r4, slot_contents.id AS t2_r0, slot_contents.slot_id AS t2_r1, slot_contents.slot_item_id AS t2_r2, slot_contents.slot_item_type AS t2_r3, slot_contents.updated_at AS t2_r5 FROM "slot_contents" JOIN "slots" AS polymorphic_parent ON "slot_contents".slot_id = polymorphic_parent.id LEFT JOIN "designs" ON "slot_contents".slot_item_id = "designs".id AND "slot_contents".slot_item_type = 'Design' LEFT JOIN "contents" ON "slot_contents".slot_item_id = "contents".id AND "slot_contents".slot_item_type = 'Content' WHERE (("slot_contents".slot_id = 1)) [0m
+  [4;35;1mSlot Create (1.5ms)[0m   [0mINSERT INTO "slots" ("name", "updated_at", "created_at") VALUES(NULL, '2009-07-04 04:59:20', '2009-07-04 04:59:20')[0m
+  [4;36;1mContent Create (0.2ms)[0m   [0;1mINSERT INTO "contents" ("updated_at", "type", "created_at") VALUES('2009-07-04 04:59:20', 'ContentA', '2009-07-04 04:59:20')[0m
+  [4;35;1mSlotContent Create (0.5ms)[0m   [0mINSERT INTO "slot_contents" ("updated_at", "slot_id", "slot_item_type", "slot_item_id", "created_at") VALUES('2009-07-04 04:59:20', 1, 'Content', 1, '2009-07-04 04:59:20')[0m
+  [4;36;1mContent Create (0.2ms)[0m   [0;1mINSERT INTO "contents" ("updated_at", "type", "created_at") VALUES('2009-07-04 04:59:20', 'ContentB', '2009-07-04 04:59:20')[0m
+  [4;35;1mSlotContent Create (0.2ms)[0m   [0mINSERT INTO "slot_contents" ("updated_at", "slot_id", "slot_item_type", "slot_item_id", "created_at") VALUES('2009-07-04 04:59:20', 1, 'Content', 2, '2009-07-04 04:59:20')[0m
+  [4;36;1mSlotContent Load (1.0ms)[0m   [0;1mSELECT 'Slot' AS polymorphic_parent_class, 'slot_items' AS polymorphic_association_id, contents.created_at AS t0_r2, contents.id AS t0_r0, contents.type AS t0_r1, contents.updated_at AS t0_r3, designs.created_at AS t1_r3, designs.id AS t1_r0, designs.name AS t1_r2, designs.type AS t1_r1, designs.updated_at AS t1_r4, slot_contents.created_at AS t2_r4, slot_contents.id AS t2_r0, slot_contents.slot_id AS t2_r1, slot_contents.slot_item_id AS t2_r2, slot_contents.slot_item_type AS t2_r3, slot_contents.updated_at AS t2_r5 FROM "slot_contents" JOIN "slots" AS polymorphic_parent ON "slot_contents".slot_id = polymorphic_parent.id LEFT JOIN "designs" ON "slot_contents".slot_item_id = "designs".id AND "slot_contents".slot_item_type = 'Design' LEFT JOIN "contents" ON "slot_contents".slot_item_id = "contents".id AND "slot_contents".slot_item_type = 'Content' WHERE (("slot_contents".slot_id = 1)) [0m
+  [4;35;1mSQL (5.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+** has_many_polymorphs: rails environment detected
+** has_many_polymorphs: loaded ok
+** has_many_polymorphs: autoload hook invoked
+** has_many_polymorphs: preloading parent model Slot
+** has_many_polymorphs: associating Slot.slot_items
+** has_many_polymorphs: autoload hook invoked
+** has_many_polymorphs: preloading parent model Slot
+  [4;36;1mSlot Create (0.7ms)[0m   [0;1mINSERT INTO "slots" ("name", "updated_at", "created_at") VALUES(NULL, '2009-07-04 04:59:36', '2009-07-04 04:59:36')[0m
+  [4;35;1mContent Create (0.2ms)[0m   [0mINSERT INTO "contents" ("updated_at", "type", "created_at") VALUES('2009-07-04 04:59:36', NULL, '2009-07-04 04:59:36')[0m
+  [4;36;1mSlotContent Create (0.2ms)[0m   [0;1mINSERT INTO "slot_contents" ("updated_at", "slot_id", "slot_item_type", "slot_item_id", "created_at") VALUES('2009-07-04 04:59:36', 1, 'Content', 1, '2009-07-04 04:59:36')[0m
+  [4;35;1mSlot Create (0.5ms)[0m   [0mINSERT INTO "slots" ("name", "updated_at", "created_at") VALUES(NULL, '2009-07-04 04:59:36', '2009-07-04 04:59:36')[0m
+  [4;36;1mDesign Create (0.3ms)[0m   [0;1mINSERT INTO "designs" ("name", "updated_at", "type", "created_at") VALUES(NULL, '2009-07-04 04:59:36', NULL, '2009-07-04 04:59:36')[0m
+  [4;35;1mSlotContent Create (0.2ms)[0m   [0mINSERT INTO "slot_contents" ("updated_at", "slot_id", "slot_item_type", "slot_item_id", "created_at") VALUES('2009-07-04 04:59:36', 1, 'Design', 1, '2009-07-04 04:59:36')[0m
+  [4;36;1mContent Create (0.2ms)[0m   [0;1mINSERT INTO "contents" ("updated_at", "type", "created_at") VALUES('2009-07-04 04:59:36', NULL, '2009-07-04 04:59:36')[0m
+  [4;35;1mSlotContent Create (0.2ms)[0m   [0mINSERT INTO "slot_contents" ("updated_at", "slot_id", "slot_item_type", "slot_item_id", "created_at") VALUES('2009-07-04 04:59:36', 1, 'Content', 1, '2009-07-04 04:59:36')[0m
+  [4;36;1mSlotContent Load (1.0ms)[0m   [0;1mSELECT 'Slot' AS polymorphic_parent_class, 'slot_items' AS polymorphic_association_id, contents.created_at AS t0_r2, contents.id AS t0_r0, contents.type AS t0_r1, contents.updated_at AS t0_r3, designs.created_at AS t1_r3, designs.id AS t1_r0, designs.name AS t1_r2, designs.type AS t1_r1, designs.updated_at AS t1_r4, slot_contents.created_at AS t2_r4, slot_contents.id AS t2_r0, slot_contents.slot_id AS t2_r1, slot_contents.slot_item_id AS t2_r2, slot_contents.slot_item_type AS t2_r3, slot_contents.updated_at AS t2_r5 FROM "slot_contents" JOIN "slots" AS polymorphic_parent ON "slot_contents".slot_id = polymorphic_parent.id LEFT JOIN "designs" ON "slot_contents".slot_item_id = "designs".id AND "slot_contents".slot_item_type = 'Design' LEFT JOIN "contents" ON "slot_contents".slot_item_id = "contents".id AND "slot_contents".slot_item_type = 'Content' WHERE (("slot_contents".slot_id = 1)) [0m
+  [4;35;1mSlot Create (0.5ms)[0m   [0mINSERT INTO "slots" ("name", "updated_at", "created_at") VALUES(NULL, '2009-07-04 04:59:36', '2009-07-04 04:59:36')[0m
+  [4;36;1mDesign Create (0.2ms)[0m   [0;1mINSERT INTO "designs" ("name", "updated_at", "type", "created_at") VALUES(NULL, '2009-07-04 04:59:36', 'DesignTypeA', '2009-07-04 04:59:36')[0m
+  [4;35;1mSlotContent Create (0.2ms)[0m   [0mINSERT INTO "slot_contents" ("updated_at", "slot_id", "slot_item_type", "slot_item_id", "created_at") VALUES('2009-07-04 04:59:36', 1, 'Design', 1, '2009-07-04 04:59:36')[0m
+  [4;36;1mDesign Create (0.2ms)[0m   [0;1mINSERT INTO "designs" ("name", "updated_at", "type", "created_at") VALUES(NULL, '2009-07-04 04:59:36', 'DesignTypeB', '2009-07-04 04:59:36')[0m
+  [4;35;1mSlotContent Create (0.2ms)[0m   [0mINSERT INTO "slot_contents" ("updated_at", "slot_id", "slot_item_type", "slot_item_id", "created_at") VALUES('2009-07-04 04:59:36', 1, 'Design', 2, '2009-07-04 04:59:36')[0m
+  [4;36;1mSlotContent Load (1.3ms)[0m   [0;1mSELECT 'Slot' AS polymorphic_parent_class, 'slot_items' AS polymorphic_association_id, contents.created_at AS t0_r2, contents.id AS t0_r0, contents.type AS t0_r1, contents.updated_at AS t0_r3, designs.created_at AS t1_r3, designs.id AS t1_r0, designs.name AS t1_r2, designs.type AS t1_r1, designs.updated_at AS t1_r4, slot_contents.created_at AS t2_r4, slot_contents.id AS t2_r0, slot_contents.slot_id AS t2_r1, slot_contents.slot_item_id AS t2_r2, slot_contents.slot_item_type AS t2_r3, slot_contents.updated_at AS t2_r5 FROM "slot_contents" JOIN "slots" AS polymorphic_parent ON "slot_contents".slot_id = polymorphic_parent.id LEFT JOIN "designs" ON "slot_contents".slot_item_id = "designs".id AND "slot_contents".slot_item_type = 'Design' LEFT JOIN "contents" ON "slot_contents".slot_item_id = "contents".id AND "slot_contents".slot_item_type = 'Content' WHERE (("slot_contents".slot_id = 1)) [0m
+  [4;35;1mSlot Create (0.6ms)[0m   [0mINSERT INTO "slots" ("name", "updated_at", "created_at") VALUES(NULL, '2009-07-04 04:59:36', '2009-07-04 04:59:36')[0m
+  [4;36;1mContent Create (0.2ms)[0m   [0;1mINSERT INTO "contents" ("updated_at", "type", "created_at") VALUES('2009-07-04 04:59:36', 'ContentA', '2009-07-04 04:59:36')[0m
+  [4;35;1mSlotContent Create (0.2ms)[0m   [0mINSERT INTO "slot_contents" ("updated_at", "slot_id", "slot_item_type", "slot_item_id", "created_at") VALUES('2009-07-04 04:59:36', 1, 'Content', 1, '2009-07-04 04:59:36')[0m
+  [4;36;1mContent Create (0.2ms)[0m   [0;1mINSERT INTO "contents" ("updated_at", "type", "created_at") VALUES('2009-07-04 04:59:36', 'ContentB', '2009-07-04 04:59:36')[0m
+  [4;35;1mSlotContent Create (0.3ms)[0m   [0mINSERT INTO "slot_contents" ("updated_at", "slot_id", "slot_item_type", "slot_item_id", "created_at") VALUES('2009-07-04 04:59:36', 1, 'Content', 2, '2009-07-04 04:59:36')[0m
+  [4;36;1mSlotContent Load (1.1ms)[0m   [0;1mSELECT 'Slot' AS polymorphic_parent_class, 'slot_items' AS polymorphic_association_id, contents.created_at AS t0_r2, contents.id AS t0_r0, contents.type AS t0_r1, contents.updated_at AS t0_r3, designs.created_at AS t1_r3, designs.id AS t1_r0, designs.name AS t1_r2, designs.type AS t1_r1, designs.updated_at AS t1_r4, slot_contents.created_at AS t2_r4, slot_contents.id AS t2_r0, slot_contents.slot_id AS t2_r1, slot_contents.slot_item_id AS t2_r2, slot_contents.slot_item_type AS t2_r3, slot_contents.updated_at AS t2_r5 FROM "slot_contents" JOIN "slots" AS polymorphic_parent ON "slot_contents".slot_id = polymorphic_parent.id LEFT JOIN "designs" ON "slot_contents".slot_item_id = "designs".id AND "slot_contents".slot_item_type = 'Design' LEFT JOIN "contents" ON "slot_contents".slot_item_id = "contents".id AND "slot_contents".slot_item_type = 'Content' WHERE (("slot_contents".slot_id = 1)) [0m
+** has_many_polymorphs: rails environment detected
+** has_many_polymorphs: loaded ok
+** has_many_polymorphs: autoload hook invoked
+** has_many_polymorphs: preloading parent model Slot
+** has_many_polymorphs: associating Slot.slot_items
+** has_many_polymorphs: autoload hook invoked
+** has_many_polymorphs: preloading parent model Slot
+
+
+Processing DesignsController#destroy (for 0.0.0.0 at 2009-07-03 21:59:41) [DELETE]
+  Parameters: {"id"=>"37"}
+Redirected to http://test.host/designs
+Completed in 4ms (DB: 0) | 302 Found [http://test.host/designs/37]
+
+
+Processing DesignsController#destroy (for 0.0.0.0 at 2009-07-03 21:59:41) [DELETE]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/designs
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/designs/1]
+
+
+Processing DesignsController#update (for 0.0.0.0 at 2009-07-03 21:59:41) [PUT]
+  Parameters: {"design"=>{"these"=>"params"}, "id"=>"37"}
+Rendering template within layouts/designs
+Rendering designs/edit
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/designs/37?design%5Bthese%5D=params]
+
+
+Processing DesignsController#update (for 0.0.0.0 at 2009-07-03 21:59:41) [PUT]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/designs
+Rendering designs/edit
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/designs/1]
+
+
+Processing DesignsController#update (for 0.0.0.0 at 2009-07-03 21:59:41) [PUT]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/designs
+Rendering designs/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/designs/1]
+
+
+Processing DesignsController#update (for 0.0.0.0 at 2009-07-03 21:59:41) [PUT]
+  Parameters: {"design"=>{"these"=>"params"}, "id"=>"37"}
+Rendering template within layouts/designs
+Rendering designs/edit
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/designs/37?design%5Bthese%5D=params]
+
+
+Processing DesignsController#update (for 0.0.0.0 at 2009-07-03 21:59:41) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to #[Design:0x103b64a @name="Design_1007"]
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/designs/1]
+
+
+Processing DesignsController#update (for 0.0.0.0 at 2009-07-03 21:59:41) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to #[Design:0x1034e8a @name="Design_1008"]
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/designs/1]
+
+
+Processing DesignsController#create (for 0.0.0.0 at 2009-07-03 21:59:41) [POST]
+  Parameters: {"design"=>{"these"=>"params"}}
+Rendering template within layouts/designs
+Rendering designs/new
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/designs?design%5Bthese%5D=params]
+
+
+Processing DesignsController#create (for 0.0.0.0 at 2009-07-03 21:59:41) [POST]
+  Parameters: {"design"=>{}}
+Rendering template within layouts/designs
+Rendering designs/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/designs?]
+
+
+Processing DesignsController#create (for 0.0.0.0 at 2009-07-03 21:59:41) [POST]
+  Parameters: {"design"=>{"these"=>"params"}}
+Redirected to #[Design:0x102273a @name="Design_1011"]
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/designs?design%5Bthese%5D=params]
+
+
+Processing DesignsController#create (for 0.0.0.0 at 2009-07-03 21:59:41) [POST]
+  Parameters: {"design"=>{}}
+Redirected to #[Design:0x101c04c @name="Design_1012"]
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/designs?]
+
+
+Processing DesignsController#edit (for 0.0.0.0 at 2009-07-03 21:59:41) [GET]
+  Parameters: {"id"=>"37"}
+Rendering template within layouts/designs
+Rendering designs/edit
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/designs/37/edit]
+
+
+Processing DesignsController#new (for 0.0.0.0 at 2009-07-03 21:59:41) [GET]
+Rendering template within layouts/designs
+Rendering designs/new
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/designs/new]
+
+
+Processing DesignsController#show (for 0.0.0.0 at 2009-07-03 21:59:41) [GET]
+  Parameters: {"id"=>"37"}
+Rendering template within layouts/designs
+Rendering designs/show
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/designs/37]
+
+
+Processing DesignsController#index (for 0.0.0.0 at 2009-07-03 21:59:41) [GET]
+Rendering template within layouts/designs
+Rendering designs/index
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/designs]
+Rendering designs/edit.html.erb
+  [4;36;1mDesign Create (0.7ms)[0m   [0;1mINSERT INTO "designs" ("name", "updated_at", "type", "created_at") VALUES(NULL, '2009-07-04 04:59:41', NULL, '2009-07-04 04:59:41')[0m
+Rendering designs/index.html.erb
+Rendering designs/new.html.erb
+Rendering designs/show.html.erb
+Rendering slots/edit.html.erb
+
+
+Processing SlotsController#destroy (for 0.0.0.0 at 2009-07-03 21:59:41) [DELETE]
+  Parameters: {"id"=>"37"}
+Redirected to http://test.host/slots
+Completed in 7ms (DB: 0) | 302 Found [http://test.host/slots/37]
+
+
+Processing SlotsController#destroy (for 0.0.0.0 at 2009-07-03 21:59:41) [DELETE]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/slots
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/slots/1]
+
+
+Processing SlotsController#update (for 0.0.0.0 at 2009-07-03 21:59:41) [PUT]
+  Parameters: {"id"=>"37", "slot"=>{"these"=>"params"}}
+Rendering template within layouts/slots
+Rendering slots/edit
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://test.host/slots/37?slot%5Bthese%5D=params]
+
+
+Processing SlotsController#update (for 0.0.0.0 at 2009-07-03 21:59:41) [PUT]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/slots
+Rendering slots/edit
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/slots/1]
+
+
+Processing SlotsController#update (for 0.0.0.0 at 2009-07-03 21:59:41) [PUT]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/slots
+Rendering slots/edit
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/slots/1]
+
+
+Processing SlotsController#update (for 0.0.0.0 at 2009-07-03 21:59:41) [PUT]
+  Parameters: {"id"=>"37", "slot"=>{"these"=>"params"}}
+Rendering template within layouts/slots
+Rendering slots/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/slots/37?slot%5Bthese%5D=params]
+
+
+Processing SlotsController#update (for 0.0.0.0 at 2009-07-03 21:59:41) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to #[Slot:0x1216d48 @name="Slot_1029"]
+Completed in 5ms (DB: 0) | 302 Found [http://test.host/slots/1]
+
+
+Processing SlotsController#update (for 0.0.0.0 at 2009-07-03 21:59:41) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to #[Slot:0x11f3b36 @name="Slot_1030"]
+Completed in 3ms (DB: 0) | 302 Found [http://test.host/slots/1]
+
+
+Processing SlotsController#create (for 0.0.0.0 at 2009-07-03 21:59:42) [POST]
+  Parameters: {"slot"=>{"these"=>"params"}}
+Rendering template within layouts/slots
+Rendering slots/new
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/slots?slot%5Bthese%5D=params]
+
+
+Processing SlotsController#create (for 0.0.0.0 at 2009-07-03 21:59:42) [POST]
+  Parameters: {"slot"=>{}}
+Rendering template within layouts/slots
+Rendering slots/new
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/slots?]
+
+
+Processing SlotsController#create (for 0.0.0.0 at 2009-07-03 21:59:42) [POST]
+  Parameters: {"slot"=>{"these"=>"params"}}
+Redirected to #[Slot:0x11508be @name="Slot_1033"]
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/slots?slot%5Bthese%5D=params]
+
+
+Processing SlotsController#create (for 0.0.0.0 at 2009-07-03 21:59:42) [POST]
+  Parameters: {"slot"=>{}}
+Redirected to #[Slot:0x1137aa8 @name="Slot_1034"]
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/slots?]
+
+
+Processing SlotsController#edit (for 0.0.0.0 at 2009-07-03 21:59:42) [GET]
+  Parameters: {"id"=>"37"}
+Rendering template within layouts/slots
+Rendering slots/edit
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/slots/37/edit]
+
+
+Processing SlotsController#new (for 0.0.0.0 at 2009-07-03 21:59:42) [GET]
+Rendering template within layouts/slots
+Rendering slots/new
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/slots/new]
+
+
+Processing SlotsController#show (for 0.0.0.0 at 2009-07-03 21:59:42) [GET]
+  Parameters: {"id"=>"37"}
+Rendering template within layouts/slots
+Rendering slots/show
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/slots/37]
+
+
+Processing SlotsController#index (for 0.0.0.0 at 2009-07-03 21:59:42) [GET]
+Rendering template within layouts/slots
+Rendering slots/index
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/slots]
+Rendering slots/index.html.erb
+Rendering slots/new.html.erb
+Rendering slots/show.html.erb
+  [4;35;1mSlot Create (0.6ms)[0m   [0mINSERT INTO "slots" ("name", "updated_at", "created_at") VALUES(NULL, '2009-07-04 04:59:42', '2009-07-04 04:59:42')[0m
+Rendering contents/index.html.erb
+Rendering contents/new.html.erb
+
+
+Processing ContentsController#destroy (for 0.0.0.0 at 2009-07-03 21:59:42) [DELETE]
+  Parameters: {"id"=>"37"}
+Redirected to http://test.host/contents
+Completed in 5ms (DB: 0) | 302 Found [http://test.host/contents/37]
+
+
+Processing ContentsController#destroy (for 0.0.0.0 at 2009-07-03 21:59:42) [DELETE]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/contents
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/contents/1]
+
+
+Processing ContentsController#update (for 0.0.0.0 at 2009-07-03 21:59:42) [PUT]
+  Parameters: {"id"=>"37", "content"=>{"these"=>"params"}}
+Rendering template within layouts/contents
+Rendering contents/edit
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/contents/37?content%5Bthese%5D=params]
+
+
+Processing ContentsController#update (for 0.0.0.0 at 2009-07-03 21:59:42) [PUT]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/contents
+Rendering contents/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/contents/1]
+
+
+Processing ContentsController#update (for 0.0.0.0 at 2009-07-03 21:59:42) [PUT]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/contents
+Rendering contents/edit
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/contents/1]
+
+
+Processing ContentsController#update (for 0.0.0.0 at 2009-07-03 21:59:42) [PUT]
+  Parameters: {"id"=>"37", "content"=>{"these"=>"params"}}
+Rendering template within layouts/contents
+Rendering contents/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/contents/37?content%5Bthese%5D=params]
+
+
+Processing ContentsController#update (for 0.0.0.0 at 2009-07-03 21:59:42) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to #[Content:0x103c69e @name="Content_1052"]
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/contents/1]
+
+
+Processing ContentsController#update (for 0.0.0.0 at 2009-07-03 21:59:42) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to #[Content:0x10360d2 @name="Content_1053"]
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/contents/1]
+
+
+Processing ContentsController#create (for 0.0.0.0 at 2009-07-03 21:59:42) [POST]
+  Parameters: {"content"=>{"these"=>"params"}}
+Rendering template within layouts/contents
+Rendering contents/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/contents?content%5Bthese%5D=params]
+
+
+Processing ContentsController#create (for 0.0.0.0 at 2009-07-03 21:59:42) [POST]
+  Parameters: {"content"=>{}}
+Rendering template within layouts/contents
+Rendering contents/new
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/contents?]
+
+
+Processing ContentsController#create (for 0.0.0.0 at 2009-07-03 21:59:42) [POST]
+  Parameters: {"content"=>{"these"=>"params"}}
+Redirected to #[Content:0x102381a @name="Content_1056"]
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/contents?content%5Bthese%5D=params]
+
+
+Processing ContentsController#create (for 0.0.0.0 at 2009-07-03 21:59:42) [POST]
+  Parameters: {"content"=>{}}
+Redirected to #[Content:0x101d05a @name="Content_1057"]
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/contents?]
+
+
+Processing ContentsController#edit (for 0.0.0.0 at 2009-07-03 21:59:42) [GET]
+  Parameters: {"id"=>"37"}
+Rendering template within layouts/contents
+Rendering contents/edit
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/contents/37/edit]
+
+
+Processing ContentsController#new (for 0.0.0.0 at 2009-07-03 21:59:42) [GET]
+Rendering template within layouts/contents
+Rendering contents/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/contents/new]
+
+
+Processing ContentsController#show (for 0.0.0.0 at 2009-07-03 21:59:42) [GET]
+  Parameters: {"id"=>"37"}
+Rendering template within layouts/contents
+Rendering contents/show
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/contents/37]
+
+
+Processing ContentsController#index (for 0.0.0.0 at 2009-07-03 21:59:42) [GET]
+Rendering template within layouts/contents
+Rendering contents/index
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/contents]
+Rendering contents/show.html.erb
+Rendering contents/edit.html.erb
+  [4;36;1mContent Create (0.6ms)[0m   [0;1mINSERT INTO "contents" ("updated_at", "type", "created_at") VALUES('2009-07-04 04:59:42', NULL, '2009-07-04 04:59:42')[0m
+Rendering slot_contents/show.html.erb
+
+
+Processing SlotContentsController#destroy (for 0.0.0.0 at 2009-07-03 21:59:42) [DELETE]
+  Parameters: {"id"=>"37"}
+Redirected to http://test.host/slot_contents
+Completed in 4ms (DB: 0) | 302 Found [http://test.host/slot_contents/37]
+
+
+Processing SlotContentsController#destroy (for 0.0.0.0 at 2009-07-03 21:59:42) [DELETE]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/slot_contents
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/slot_contents/1]
+
+
+Processing SlotContentsController#update (for 0.0.0.0 at 2009-07-03 21:59:42) [PUT]
+  Parameters: {"slot_content"=>{"these"=>"params"}, "id"=>"37"}
+Rendering template within layouts/slot_contents
+Rendering slot_contents/edit
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/slot_contents/37?slot_content%5Bthese%5D=params]
+
+
+Processing SlotContentsController#update (for 0.0.0.0 at 2009-07-03 21:59:42) [PUT]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/slot_contents
+Rendering slot_contents/edit
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/slot_contents/1]
+
+
+Processing SlotContentsController#update (for 0.0.0.0 at 2009-07-03 21:59:42) [PUT]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/slot_contents
+Rendering slot_contents/edit
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/slot_contents/1]
+
+
+Processing SlotContentsController#update (for 0.0.0.0 at 2009-07-03 21:59:42) [PUT]
+  Parameters: {"slot_content"=>{"these"=>"params"}, "id"=>"37"}
+Rendering template within layouts/slot_contents
+Rendering slot_contents/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/slot_contents/37?slot_content%5Bthese%5D=params]
+
+
+Processing SlotContentsController#update (for 0.0.0.0 at 2009-07-03 21:59:42) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to #[SlotContent:0xfb98d4 @name="SlotContent_1071"]
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/slot_contents/1]
+
+
+Processing SlotContentsController#update (for 0.0.0.0 at 2009-07-03 21:59:42) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to #[SlotContent:0xfb30c4 @name="SlotContent_1072"]
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/slot_contents/1]
+
+
+Processing SlotContentsController#create (for 0.0.0.0 at 2009-07-03 21:59:42) [POST]
+  Parameters: {"slot_content"=>{"these"=>"params"}}
+Rendering template within layouts/slot_contents
+Rendering slot_contents/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/slot_contents?slot_content%5Bthese%5D=params]
+
+
+Processing SlotContentsController#create (for 0.0.0.0 at 2009-07-03 21:59:42) [POST]
+  Parameters: {"slot_content"=>{}}
+Rendering template within layouts/slot_contents
+Rendering slot_contents/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/slot_contents?]
+
+
+Processing SlotContentsController#create (for 0.0.0.0 at 2009-07-03 21:59:42) [POST]
+  Parameters: {"slot_content"=>{"these"=>"params"}}
+Redirected to #[SlotContent:0xfa0956 @name="SlotContent_1075"]
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/slot_contents?slot_content%5Bthese%5D=params]
+
+
+Processing SlotContentsController#create (for 0.0.0.0 at 2009-07-03 21:59:42) [POST]
+  Parameters: {"slot_content"=>{}}
+Redirected to #[SlotContent:0xf9a254 @name="SlotContent_1076"]
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/slot_contents?]
+
+
+Processing SlotContentsController#edit (for 0.0.0.0 at 2009-07-03 21:59:42) [GET]
+  Parameters: {"id"=>"37"}
+Rendering template within layouts/slot_contents
+Rendering slot_contents/edit
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/slot_contents/37/edit]
+
+
+Processing SlotContentsController#new (for 0.0.0.0 at 2009-07-03 21:59:42) [GET]
+Rendering template within layouts/slot_contents
+Rendering slot_contents/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/slot_contents/new]
+
+
+Processing SlotContentsController#show (for 0.0.0.0 at 2009-07-03 21:59:42) [GET]
+  Parameters: {"id"=>"37"}
+Rendering template within layouts/slot_contents
+Rendering slot_contents/show
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/slot_contents/37]
+
+
+Processing SlotContentsController#index (for 0.0.0.0 at 2009-07-03 21:59:42) [GET]
+Rendering template within layouts/slot_contents
+Rendering slot_contents/index
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/slot_contents]
+Rendering slot_contents/new.html.erb
+Rendering slot_contents/edit.html.erb
+Rendering slot_contents/index.html.erb
+  [4;35;1mSlot Create (1.0ms)[0m   [0mINSERT INTO "slots" ("name", "updated_at", "created_at") VALUES(NULL, '2009-07-04 04:59:42', '2009-07-04 04:59:42')[0m
+  [4;36;1mContent Create (0.5ms)[0m   [0;1mINSERT INTO "contents" ("updated_at", "type", "created_at") VALUES('2009-07-04 04:59:42', NULL, '2009-07-04 04:59:42')[0m
+  [4;35;1mSlotContent Create (0.3ms)[0m   [0mINSERT INTO "slot_contents" ("updated_at", "slot_id", "slot_item_type", "slot_item_id", "created_at") VALUES('2009-07-04 04:59:42', 1, 'Content', 1, '2009-07-04 04:59:42')[0m
+  [4;36;1mSlot Create (0.5ms)[0m   [0;1mINSERT INTO "slots" ("name", "updated_at", "created_at") VALUES(NULL, '2009-07-04 04:59:42', '2009-07-04 04:59:42')[0m
+  [4;35;1mDesign Create (0.2ms)[0m   [0mINSERT INTO "designs" ("name", "updated_at", "type", "created_at") VALUES(NULL, '2009-07-04 04:59:42', NULL, '2009-07-04 04:59:42')[0m
+  [4;36;1mSlotContent Create (0.2ms)[0m   [0;1mINSERT INTO "slot_contents" ("updated_at", "slot_id", "slot_item_type", "slot_item_id", "created_at") VALUES('2009-07-04 04:59:42', 1, 'Design', 1, '2009-07-04 04:59:42')[0m
+  [4;35;1mContent Create (0.2ms)[0m   [0mINSERT INTO "contents" ("updated_at", "type", "created_at") VALUES('2009-07-04 04:59:42', NULL, '2009-07-04 04:59:42')[0m
+  [4;36;1mSlotContent Create (0.2ms)[0m   [0;1mINSERT INTO "slot_contents" ("updated_at", "slot_id", "slot_item_type", "slot_item_id", "created_at") VALUES('2009-07-04 04:59:42', 1, 'Content', 1, '2009-07-04 04:59:42')[0m
+  [4;35;1mSlotContent Load (1.1ms)[0m   [0mSELECT 'Slot' AS polymorphic_parent_class, 'slot_items' AS polymorphic_association_id, contents.created_at AS t0_r2, contents.id AS t0_r0, contents.type AS t0_r1, contents.updated_at AS t0_r3, designs.created_at AS t1_r3, designs.id AS t1_r0, designs.name AS t1_r2, designs.type AS t1_r1, designs.updated_at AS t1_r4, slot_contents.created_at AS t2_r4, slot_contents.id AS t2_r0, slot_contents.slot_id AS t2_r1, slot_contents.slot_item_id AS t2_r2, slot_contents.slot_item_type AS t2_r3, slot_contents.updated_at AS t2_r5 FROM "slot_contents" JOIN "slots" AS polymorphic_parent ON "slot_contents".slot_id = polymorphic_parent.id LEFT JOIN "designs" ON "slot_contents".slot_item_id = "designs".id AND "slot_contents".slot_item_type = 'Design' LEFT JOIN "contents" ON "slot_contents".slot_item_id = "contents".id AND "slot_contents".slot_item_type = 'Content' WHERE (("slot_contents".slot_id = 1)) [0m
+  [4;36;1mSlot Create (2.0ms)[0m   [0;1mINSERT INTO "slots" ("name", "updated_at", "created_at") VALUES(NULL, '2009-07-04 04:59:42', '2009-07-04 04:59:42')[0m
+  [4;35;1mDesign Create (0.2ms)[0m   [0mINSERT INTO "designs" ("name", "updated_at", "type", "created_at") VALUES(NULL, '2009-07-04 04:59:42', 'DesignTypeA', '2009-07-04 04:59:42')[0m
+  [4;36;1mSlotContent Create (0.2ms)[0m   [0;1mINSERT INTO "slot_contents" ("updated_at", "slot_id", "slot_item_type", "slot_item_id", "created_at") VALUES('2009-07-04 04:59:42', 1, 'Design', 1, '2009-07-04 04:59:42')[0m
+  [4;35;1mDesign Create (0.2ms)[0m   [0mINSERT INTO "designs" ("name", "updated_at", "type", "created_at") VALUES(NULL, '2009-07-04 04:59:42', 'DesignTypeB', '2009-07-04 04:59:42')[0m
+  [4;36;1mSlotContent Create (0.2ms)[0m   [0;1mINSERT INTO "slot_contents" ("updated_at", "slot_id", "slot_item_type", "slot_item_id", "created_at") VALUES('2009-07-04 04:59:42', 1, 'Design', 2, '2009-07-04 04:59:42')[0m
+  [4;35;1mSlotContent Load (1.0ms)[0m   [0mSELECT 'Slot' AS polymorphic_parent_class, 'slot_items' AS polymorphic_association_id, contents.created_at AS t0_r2, contents.id AS t0_r0, contents.type AS t0_r1, contents.updated_at AS t0_r3, designs.created_at AS t1_r3, designs.id AS t1_r0, designs.name AS t1_r2, designs.type AS t1_r1, designs.updated_at AS t1_r4, slot_contents.created_at AS t2_r4, slot_contents.id AS t2_r0, slot_contents.slot_id AS t2_r1, slot_contents.slot_item_id AS t2_r2, slot_contents.slot_item_type AS t2_r3, slot_contents.updated_at AS t2_r5 FROM "slot_contents" JOIN "slots" AS polymorphic_parent ON "slot_contents".slot_id = polymorphic_parent.id LEFT JOIN "designs" ON "slot_contents".slot_item_id = "designs".id AND "slot_contents".slot_item_type = 'Design' LEFT JOIN "contents" ON "slot_contents".slot_item_id = "contents".id AND "slot_contents".slot_item_type = 'Content' WHERE (("slot_contents".slot_id = 1)) [0m
+  [4;36;1mSlot Create (0.5ms)[0m   [0;1mINSERT INTO "slots" ("name", "updated_at", "created_at") VALUES(NULL, '2009-07-04 04:59:42', '2009-07-04 04:59:42')[0m
+  [4;35;1mContent Create (0.2ms)[0m   [0mINSERT INTO "contents" ("updated_at", "type", "created_at") VALUES('2009-07-04 04:59:42', 'ContentA', '2009-07-04 04:59:42')[0m
+  [4;36;1mSlotContent Create (0.2ms)[0m   [0;1mINSERT INTO "slot_contents" ("updated_at", "slot_id", "slot_item_type", "slot_item_id", "created_at") VALUES('2009-07-04 04:59:42', 1, 'Content', 1, '2009-07-04 04:59:42')[0m
+  [4;35;1mContent Create (0.2ms)[0m   [0mINSERT INTO "contents" ("updated_at", "type", "created_at") VALUES('2009-07-04 04:59:42', 'ContentB', '2009-07-04 04:59:42')[0m
+  [4;36;1mSlotContent Create (0.2ms)[0m   [0;1mINSERT INTO "slot_contents" ("updated_at", "slot_id", "slot_item_type", "slot_item_id", "created_at") VALUES('2009-07-04 04:59:42', 1, 'Content', 2, '2009-07-04 04:59:42')[0m
+  [4;35;1mSlotContent Load (1.0ms)[0m   [0mSELECT 'Slot' AS polymorphic_parent_class, 'slot_items' AS polymorphic_association_id, contents.created_at AS t0_r2, contents.id AS t0_r0, contents.type AS t0_r1, contents.updated_at AS t0_r3, designs.created_at AS t1_r3, designs.id AS t1_r0, designs.name AS t1_r2, designs.type AS t1_r1, designs.updated_at AS t1_r4, slot_contents.created_at AS t2_r4, slot_contents.id AS t2_r0, slot_contents.slot_id AS t2_r1, slot_contents.slot_item_id AS t2_r2, slot_contents.slot_item_type AS t2_r3, slot_contents.updated_at AS t2_r5 FROM "slot_contents" JOIN "slots" AS polymorphic_parent ON "slot_contents".slot_id = polymorphic_parent.id LEFT JOIN "designs" ON "slot_contents".slot_item_id = "designs".id AND "slot_contents".slot_item_type = 'Design' LEFT JOIN "contents" ON "slot_contents".slot_item_id = "contents".id AND "slot_contents".slot_item_type = 'Content' WHERE (("slot_contents".slot_id = 1)) [0m
+** has_many_polymorphs: rails environment detected
+** has_many_polymorphs: loaded ok
+** has_many_polymorphs: autoload hook invoked
+** has_many_polymorphs: preloading parent model Slot
+** has_many_polymorphs: associating Slot.slot_items
+** has_many_polymorphs: autoload hook invoked
+** has_many_polymorphs: preloading parent model Slot
+  [4;36;1mSlot Create (0.8ms)[0m   [0;1mINSERT INTO "slots" ("name", "updated_at", "created_at") VALUES(NULL, '2009-07-04 05:02:26', '2009-07-04 05:02:26')[0m
+  [4;35;1mContent Create (0.2ms)[0m   [0mINSERT INTO "contents" ("updated_at", "type", "created_at") VALUES('2009-07-04 05:02:26', NULL, '2009-07-04 05:02:26')[0m
+  [4;36;1mSlotContent Create (0.2ms)[0m   [0;1mINSERT INTO "slot_contents" ("updated_at", "slot_id", "slot_item_type", "slot_item_id", "created_at") VALUES('2009-07-04 05:02:26', 1, 'Content', 1, '2009-07-04 05:02:26')[0m
+  [4;35;1mSlot Create (0.5ms)[0m   [0mINSERT INTO "slots" ("name", "updated_at", "created_at") VALUES(NULL, '2009-07-04 05:02:26', '2009-07-04 05:02:26')[0m
+  [4;36;1mDesign Create (0.2ms)[0m   [0;1mINSERT INTO "designs" ("name", "updated_at", "type", "created_at") VALUES(NULL, '2009-07-04 05:02:26', NULL, '2009-07-04 05:02:26')[0m
+  [4;35;1mSlotContent Create (0.2ms)[0m   [0mINSERT INTO "slot_contents" ("updated_at", "slot_id", "slot_item_type", "slot_item_id", "created_at") VALUES('2009-07-04 05:02:26', 1, 'Design', 1, '2009-07-04 05:02:26')[0m
+  [4;36;1mContent Create (0.2ms)[0m   [0;1mINSERT INTO "contents" ("updated_at", "type", "created_at") VALUES('2009-07-04 05:02:26', NULL, '2009-07-04 05:02:26')[0m
+  [4;35;1mSlotContent Create (0.1ms)[0m   [0mINSERT INTO "slot_contents" ("updated_at", "slot_id", "slot_item_type", "slot_item_id", "created_at") VALUES('2009-07-04 05:02:26', 1, 'Content', 1, '2009-07-04 05:02:26')[0m
+  [4;36;1mSlotContent Load (1.0ms)[0m   [0;1mSELECT 'Slot' AS polymorphic_parent_class, 'slot_items' AS polymorphic_association_id, contents.created_at AS t0_r2, contents.id AS t0_r0, contents.type AS t0_r1, contents.updated_at AS t0_r3, designs.created_at AS t1_r3, designs.id AS t1_r0, designs.name AS t1_r2, designs.type AS t1_r1, designs.updated_at AS t1_r4, slot_contents.created_at AS t2_r4, slot_contents.id AS t2_r0, slot_contents.slot_id AS t2_r1, slot_contents.slot_item_id AS t2_r2, slot_contents.slot_item_type AS t2_r3, slot_contents.updated_at AS t2_r5 FROM "slot_contents" JOIN "slots" AS polymorphic_parent ON "slot_contents".slot_id = polymorphic_parent.id LEFT JOIN "designs" ON "slot_contents".slot_item_id = "designs".id AND "slot_contents".slot_item_type = 'Design' LEFT JOIN "contents" ON "slot_contents".slot_item_id = "contents".id AND "slot_contents".slot_item_type = 'Content' WHERE (("slot_contents".slot_id = 1)) [0m
+  [4;35;1mSlot Create (1.5ms)[0m   [0mINSERT INTO "slots" ("name", "updated_at", "created_at") VALUES(NULL, '2009-07-04 05:02:26', '2009-07-04 05:02:26')[0m
+  [4;36;1mDesign Create (0.2ms)[0m   [0;1mINSERT INTO "designs" ("name", "updated_at", "type", "created_at") VALUES(NULL, '2009-07-04 05:02:26', 'DesignTypeA', '2009-07-04 05:02:26')[0m
+  [4;35;1mSlotContent Create (0.7ms)[0m   [0mINSERT INTO "slot_contents" ("updated_at", "slot_id", "slot_item_type", "slot_item_id", "created_at") VALUES('2009-07-04 05:02:26', 1, 'Design', 1, '2009-07-04 05:02:26')[0m
+  [4;36;1mDesign Create (0.2ms)[0m   [0;1mINSERT INTO "designs" ("name", "updated_at", "type", "created_at") VALUES(NULL, '2009-07-04 05:02:26', 'DesignTypeB', '2009-07-04 05:02:26')[0m
+  [4;35;1mSlotContent Create (0.2ms)[0m   [0mINSERT INTO "slot_contents" ("updated_at", "slot_id", "slot_item_type", "slot_item_id", "created_at") VALUES('2009-07-04 05:02:26', 1, 'Design', 2, '2009-07-04 05:02:26')[0m
+  [4;36;1mSlotContent Load (1.0ms)[0m   [0;1mSELECT 'Slot' AS polymorphic_parent_class, 'slot_items' AS polymorphic_association_id, contents.created_at AS t0_r2, contents.id AS t0_r0, contents.type AS t0_r1, contents.updated_at AS t0_r3, designs.created_at AS t1_r3, designs.id AS t1_r0, designs.name AS t1_r2, designs.type AS t1_r1, designs.updated_at AS t1_r4, slot_contents.created_at AS t2_r4, slot_contents.id AS t2_r0, slot_contents.slot_id AS t2_r1, slot_contents.slot_item_id AS t2_r2, slot_contents.slot_item_type AS t2_r3, slot_contents.updated_at AS t2_r5 FROM "slot_contents" JOIN "slots" AS polymorphic_parent ON "slot_contents".slot_id = polymorphic_parent.id LEFT JOIN "designs" ON "slot_contents".slot_item_id = "designs".id AND "slot_contents".slot_item_type = 'Design' LEFT JOIN "contents" ON "slot_contents".slot_item_id = "contents".id AND "slot_contents".slot_item_type = 'Content' WHERE (("slot_contents".slot_id = 1)) [0m
+  [4;35;1mSlot Create (0.6ms)[0m   [0mINSERT INTO "slots" ("name", "updated_at", "created_at") VALUES(NULL, '2009-07-04 05:02:26', '2009-07-04 05:02:26')[0m
+  [4;36;1mContent Create (0.2ms)[0m   [0;1mINSERT INTO "contents" ("updated_at", "type", "created_at") VALUES('2009-07-04 05:02:26', 'ContentA', '2009-07-04 05:02:26')[0m
+  [4;35;1mSlotContent Create (0.2ms)[0m   [0mINSERT INTO "slot_contents" ("updated_at", "slot_id", "slot_item_type", "slot_item_id", "created_at") VALUES('2009-07-04 05:02:26', 1, 'Content', 1, '2009-07-04 05:02:26')[0m
+  [4;36;1mContent Create (0.2ms)[0m   [0;1mINSERT INTO "contents" ("updated_at", "type", "created_at") VALUES('2009-07-04 05:02:26', 'ContentB', '2009-07-04 05:02:26')[0m
+  [4;35;1mSlotContent Create (0.2ms)[0m   [0mINSERT INTO "slot_contents" ("updated_at", "slot_id", "slot_item_type", "slot_item_id", "created_at") VALUES('2009-07-04 05:02:26', 1, 'Content', 2, '2009-07-04 05:02:26')[0m
+  [4;36;1mSlotContent Load (1.0ms)[0m   [0;1mSELECT 'Slot' AS polymorphic_parent_class, 'slot_items' AS polymorphic_association_id, contents.created_at AS t0_r2, contents.id AS t0_r0, contents.type AS t0_r1, contents.updated_at AS t0_r3, designs.created_at AS t1_r3, designs.id AS t1_r0, designs.name AS t1_r2, designs.type AS t1_r1, designs.updated_at AS t1_r4, slot_contents.created_at AS t2_r4, slot_contents.id AS t2_r0, slot_contents.slot_id AS t2_r1, slot_contents.slot_item_id AS t2_r2, slot_contents.slot_item_type AS t2_r3, slot_contents.updated_at AS t2_r5 FROM "slot_contents" JOIN "slots" AS polymorphic_parent ON "slot_contents".slot_id = polymorphic_parent.id LEFT JOIN "designs" ON "slot_contents".slot_item_id = "designs".id AND "slot_contents".slot_item_type = 'Design' LEFT JOIN "contents" ON "slot_contents".slot_item_id = "contents".id AND "slot_contents".slot_item_type = 'Content' WHERE (("slot_contents".slot_id = 1)) [0m
+  [4;35;1mSlot Create (0.5ms)[0m   [0mINSERT INTO "slots" ("name", "updated_at", "created_at") VALUES(NULL, '2009-07-04 05:02:26', '2009-07-04 05:02:26')[0m
+  [4;36;1mContent Create (0.2ms)[0m   [0;1mINSERT INTO "contents" ("updated_at", "type", "created_at") VALUES('2009-07-04 05:02:26', 'ContentA', '2009-07-04 05:02:26')[0m
+  [4;35;1mSlotContent Create (0.2ms)[0m   [0mINSERT INTO "slot_contents" ("updated_at", "slot_id", "slot_item_type", "slot_item_id", "created_at") VALUES('2009-07-04 05:02:26', 1, 'Content', 1, '2009-07-04 05:02:26')[0m
+  [4;36;1mContent Create (0.1ms)[0m   [0;1mINSERT INTO "contents" ("updated_at", "type", "created_at") VALUES('2009-07-04 05:02:26', 'ContentB', '2009-07-04 05:02:26')[0m
+  [4;35;1mSlotContent Create (0.6ms)[0m   [0mINSERT INTO "slot_contents" ("updated_at", "slot_id", "slot_item_type", "slot_item_id", "created_at") VALUES('2009-07-04 05:02:26', 1, 'Content', 2, '2009-07-04 05:02:26')[0m
+  [4;36;1mDesign Create (0.3ms)[0m   [0;1mINSERT INTO "designs" ("name", "updated_at", "type", "created_at") VALUES(NULL, '2009-07-04 05:02:26', 'DesignTypeA', '2009-07-04 05:02:26')[0m
+  [4;35;1mSlotContent Create (0.3ms)[0m   [0mINSERT INTO "slot_contents" ("updated_at", "slot_id", "slot_item_type", "slot_item_id", "created_at") VALUES('2009-07-04 05:02:26', 1, 'Design', 1, '2009-07-04 05:02:26')[0m
+  [4;36;1mDesign Create (0.2ms)[0m   [0;1mINSERT INTO "designs" ("name", "updated_at", "type", "created_at") VALUES(NULL, '2009-07-04 05:02:26', 'DesignTypeB', '2009-07-04 05:02:26')[0m
+  [4;35;1mSlotContent Create (0.2ms)[0m   [0mINSERT INTO "slot_contents" ("updated_at", "slot_id", "slot_item_type", "slot_item_id", "created_at") VALUES('2009-07-04 05:02:26', 1, 'Design', 2, '2009-07-04 05:02:26')[0m
+  [4;36;1mSlotContent Load (1.6ms)[0m   [0;1mSELECT 'Slot' AS polymorphic_parent_class, 'slot_items' AS polymorphic_association_id, contents.created_at AS t0_r2, contents.id AS t0_r0, contents.type AS t0_r1, contents.updated_at AS t0_r3, designs.created_at AS t1_r3, designs.id AS t1_r0, designs.name AS t1_r2, designs.type AS t1_r1, designs.updated_at AS t1_r4, slot_contents.created_at AS t2_r4, slot_contents.id AS t2_r0, slot_contents.slot_id AS t2_r1, slot_contents.slot_item_id AS t2_r2, slot_contents.slot_item_type AS t2_r3, slot_contents.updated_at AS t2_r5 FROM "slot_contents" JOIN "slots" AS polymorphic_parent ON "slot_contents".slot_id = polymorphic_parent.id LEFT JOIN "designs" ON "slot_contents".slot_item_id = "designs".id AND "slot_contents".slot_item_type = 'Design' LEFT JOIN "contents" ON "slot_contents".slot_item_id = "contents".id AND "slot_contents".slot_item_type = 'Content' WHERE (("slot_contents".slot_id = 1)) [0m
+** has_many_polymorphs: rails environment detected
+** has_many_polymorphs: loaded ok
+** has_many_polymorphs: autoload hook invoked
+** has_many_polymorphs: preloading parent model Slot
+** has_many_polymorphs: associating Slot.slot_items
+** has_many_polymorphs: autoload hook invoked
+** has_many_polymorphs: preloading parent model Slot
+  [4;36;1mSlot Create (1.0ms)[0m   [0;1mINSERT INTO "slots" ("name", "updated_at", "created_at") VALUES(NULL, '2009-07-04 05:02:30', '2009-07-04 05:02:30')[0m
+  [4;35;1mSlot Create (0.5ms)[0m   [0mINSERT INTO "slots" ("name", "updated_at", "created_at") VALUES(NULL, '2009-07-04 05:02:30', '2009-07-04 05:02:30')[0m
+** has_many_polymorphs: rails environment detected
+** has_many_polymorphs: loaded ok
+** has_many_polymorphs: autoload hook invoked
+** has_many_polymorphs: preloading parent model Slot
+** has_many_polymorphs: associating Slot.slot_items
+** has_many_polymorphs: autoload hook invoked
+** has_many_polymorphs: preloading parent model Slot
+  [4;36;1mSlot Create (0.8ms)[0m   [0;1mINSERT INTO "slots" ("name", "updated_at", "created_at") VALUES(NULL, '2009-07-04 05:04:55', '2009-07-04 05:04:55')[0m
+  [4;35;1mSlot Create (0.5ms)[0m   [0mINSERT INTO "slots" ("name", "updated_at", "created_at") VALUES(NULL, '2009-07-04 05:04:55', '2009-07-04 05:04:55')[0m
+** has_many_polymorphs: Loading instances for polymorphic duplicate push check; use :skip_duplicates => false and perhaps a database constraint to avoid this possible performance issue
+  [4;36;1mSlotContent Load (0.3ms)[0m   [0;1mSELECT 'Slot' AS polymorphic_parent_class, 'slot_items' AS polymorphic_association_id, contents.created_at AS t0_r2, contents.id AS t0_r0, contents.type AS t0_r1, contents.updated_at AS t0_r3, designs.created_at AS t1_r3, designs.id AS t1_r0, designs.name AS t1_r2, designs.type AS t1_r1, designs.updated_at AS t1_r4, slot_contents.created_at AS t2_r4, slot_contents.id AS t2_r0, slot_contents.slot_id AS t2_r1, slot_contents.slot_item_id AS t2_r2, slot_contents.slot_item_type AS t2_r3, slot_contents.updated_at AS t2_r5 FROM "slot_contents" JOIN "slots" AS polymorphic_parent ON "slot_contents".slot_id = polymorphic_parent.id LEFT JOIN "designs" ON "slot_contents".slot_item_id = "designs".id AND "slot_contents".slot_item_type = 'Design' LEFT JOIN "contents" ON "slot_contents".slot_item_id = "contents".id AND "slot_contents".slot_item_type = 'Content' WHERE (("slot_contents".slot_id = 1)) [0m
+** has_many_polymorphs: rails environment detected
+** has_many_polymorphs: loaded ok
+** has_many_polymorphs: autoload hook invoked
+** has_many_polymorphs: preloading parent model Slot
+** has_many_polymorphs: associating Slot.slot_items
+** has_many_polymorphs: autoload hook invoked
+** has_many_polymorphs: preloading parent model Slot
+  [4;36;1mSlot Create (0.7ms)[0m   [0;1mINSERT INTO "slots" ("name", "updated_at", "created_at") VALUES(NULL, '2009-07-04 05:05:17', '2009-07-04 05:05:17')[0m
+  [4;35;1mSlot Create (0.5ms)[0m   [0mINSERT INTO "slots" ("name", "updated_at", "created_at") VALUES(NULL, '2009-07-04 05:05:17', '2009-07-04 05:05:17')[0m
+  [4;36;1mContent Create (0.3ms)[0m   [0;1mINSERT INTO "contents" ("updated_at", "type", "created_at") VALUES('2009-07-04 05:05:17', 'ContentA', '2009-07-04 05:05:17')[0m
+** has_many_polymorphs: Loading instances for polymorphic duplicate push check; use :skip_duplicates => false and perhaps a database constraint to avoid this possible performance issue
+  [4;35;1mSlotContent Load (0.3ms)[0m   [0mSELECT 'Slot' AS polymorphic_parent_class, 'slot_items' AS polymorphic_association_id, contents.created_at AS t0_r2, contents.id AS t0_r0, contents.type AS t0_r1, contents.updated_at AS t0_r3, designs.created_at AS t1_r3, designs.id AS t1_r0, designs.name AS t1_r2, designs.type AS t1_r1, designs.updated_at AS t1_r4, slot_contents.created_at AS t2_r4, slot_contents.id AS t2_r0, slot_contents.slot_id AS t2_r1, slot_contents.slot_item_id AS t2_r2, slot_contents.slot_item_type AS t2_r3, slot_contents.updated_at AS t2_r5 FROM "slot_contents" JOIN "slots" AS polymorphic_parent ON "slot_contents".slot_id = polymorphic_parent.id LEFT JOIN "designs" ON "slot_contents".slot_item_id = "designs".id AND "slot_contents".slot_item_type = 'Design' LEFT JOIN "contents" ON "slot_contents".slot_item_id = "contents".id AND "slot_contents".slot_item_type = 'Content' WHERE (("slot_contents".slot_id = 1)) [0m
+  [4;36;1mSlotContent Create (0.2ms)[0m   [0;1mINSERT INTO "slot_contents" ("updated_at", "slot_id", "slot_item_type", "slot_item_id", "created_at") VALUES('2009-07-04 05:05:17', 1, 'Content', 1, '2009-07-04 05:05:17')[0m
+  [4;35;1mContent Create (0.1ms)[0m   [0mINSERT INTO "contents" ("updated_at", "type", "created_at") VALUES('2009-07-04 05:05:17', 'ContentB', '2009-07-04 05:05:17')[0m
+** has_many_polymorphs: Loading instances for polymorphic duplicate push check; use :skip_duplicates => false and perhaps a database constraint to avoid this possible performance issue
+  [4;36;1mSlotContent Create (0.2ms)[0m   [0;1mINSERT INTO "slot_contents" ("updated_at", "slot_id", "slot_item_type", "slot_item_id", "created_at") VALUES('2009-07-04 05:05:17', 1, 'Content', 2, '2009-07-04 05:05:17')[0m
+  [4;35;1mDesign Create (0.2ms)[0m   [0mINSERT INTO "designs" ("name", "updated_at", "type", "created_at") VALUES(NULL, '2009-07-04 05:05:17', 'DesignTypeA', '2009-07-04 05:05:17')[0m
+** has_many_polymorphs: Loading instances for polymorphic duplicate push check; use :skip_duplicates => false and perhaps a database constraint to avoid this possible performance issue
+  [4;36;1mSlotContent Create (0.2ms)[0m   [0;1mINSERT INTO "slot_contents" ("updated_at", "slot_id", "slot_item_type", "slot_item_id", "created_at") VALUES('2009-07-04 05:05:17', 1, 'Design', 1, '2009-07-04 05:05:17')[0m
+  [4;35;1mDesign Create (0.1ms)[0m   [0mINSERT INTO "designs" ("name", "updated_at", "type", "created_at") VALUES(NULL, '2009-07-04 05:05:17', 'DesignTypeB', '2009-07-04 05:05:17')[0m
+** has_many_polymorphs: Loading instances for polymorphic duplicate push check; use :skip_duplicates => false and perhaps a database constraint to avoid this possible performance issue
+  [4;36;1mSlotContent Create (0.1ms)[0m   [0;1mINSERT INTO "slot_contents" ("updated_at", "slot_id", "slot_item_type", "slot_item_id", "created_at") VALUES('2009-07-04 05:05:17', 1, 'Design', 2, '2009-07-04 05:05:17')[0m
+  [4;35;1mSlotContent Load (1.5ms)[0m   [0mSELECT 'Slot' AS polymorphic_parent_class, 'slot_items' AS polymorphic_association_id, contents.created_at AS t0_r2, contents.id AS t0_r0, contents.type AS t0_r1, contents.updated_at AS t0_r3, designs.created_at AS t1_r3, designs.id AS t1_r0, designs.name AS t1_r2, designs.type AS t1_r1, designs.updated_at AS t1_r4, slot_contents.created_at AS t2_r4, slot_contents.id AS t2_r0, slot_contents.slot_id AS t2_r1, slot_contents.slot_item_id AS t2_r2, slot_contents.slot_item_type AS t2_r3, slot_contents.updated_at AS t2_r5 FROM "slot_contents" JOIN "slots" AS polymorphic_parent ON "slot_contents".slot_id = polymorphic_parent.id LEFT JOIN "designs" ON "slot_contents".slot_item_id = "designs".id AND "slot_contents".slot_item_type = 'Design' LEFT JOIN "contents" ON "slot_contents".slot_item_id = "contents".id AND "slot_contents".slot_item_type = 'Content' WHERE (("slot_contents".slot_id = 1)) [0m
+** has_many_polymorphs: rails environment detected
+** has_many_polymorphs: loaded ok
+** has_many_polymorphs: autoload hook invoked
+** has_many_polymorphs: preloading parent model Slot
+** has_many_polymorphs: associating Slot.slot_items
+** has_many_polymorphs: autoload hook invoked
+** has_many_polymorphs: preloading parent model Slot
+
+
+Processing DesignsController#destroy (for 0.0.0.0 at 2009-07-03 22:05:21) [DELETE]
+  Parameters: {"id"=>"37"}
+Redirected to http://test.host/designs
+Completed in 5ms (DB: 0) | 302 Found [http://test.host/designs/37]
+
+
+Processing DesignsController#destroy (for 0.0.0.0 at 2009-07-03 22:05:21) [DELETE]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/designs
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/designs/1]
+
+
+Processing DesignsController#update (for 0.0.0.0 at 2009-07-03 22:05:21) [PUT]
+  Parameters: {"design"=>{"these"=>"params"}, "id"=>"37"}
+Rendering template within layouts/designs
+Rendering designs/edit
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/designs/37?design%5Bthese%5D=params]
+
+
+Processing DesignsController#update (for 0.0.0.0 at 2009-07-03 22:05:21) [PUT]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/designs
+Rendering designs/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/designs/1]
+
+
+Processing DesignsController#update (for 0.0.0.0 at 2009-07-03 22:05:21) [PUT]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/designs
+Rendering designs/edit
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/designs/1]
+
+
+Processing DesignsController#update (for 0.0.0.0 at 2009-07-03 22:05:21) [PUT]
+  Parameters: {"design"=>{"these"=>"params"}, "id"=>"37"}
+Rendering template within layouts/designs
+Rendering designs/edit
+Completed in 7ms (View: 4, DB: 0) | 200 OK [http://test.host/designs/37?design%5Bthese%5D=params]
+
+
+Processing DesignsController#update (for 0.0.0.0 at 2009-07-03 22:05:21) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to #[Design:0x103ae3e @name="Design_1007"]
+Completed in 4ms (DB: 0) | 302 Found [http://test.host/designs/1]
+
+
+Processing DesignsController#update (for 0.0.0.0 at 2009-07-03 22:05:21) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to #[Design:0x103467e @name="Design_1008"]
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/designs/1]
+
+
+Processing DesignsController#create (for 0.0.0.0 at 2009-07-03 22:05:21) [POST]
+  Parameters: {"design"=>{"these"=>"params"}}
+Rendering template within layouts/designs
+Rendering designs/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/designs?design%5Bthese%5D=params]
+
+
+Processing DesignsController#create (for 0.0.0.0 at 2009-07-03 22:05:21) [POST]
+  Parameters: {"design"=>{}}
+Rendering template within layouts/designs
+Rendering designs/new
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/designs?]
+
+
+Processing DesignsController#create (for 0.0.0.0 at 2009-07-03 22:05:21) [POST]
+  Parameters: {"design"=>{"these"=>"params"}}
+Redirected to #[Design:0x1021f2e @name="Design_1011"]
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/designs?design%5Bthese%5D=params]
+
+
+Processing DesignsController#create (for 0.0.0.0 at 2009-07-03 22:05:21) [POST]
+  Parameters: {"design"=>{}}
+Redirected to #[Design:0x101b840 @name="Design_1012"]
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/designs?]
+
+
+Processing DesignsController#edit (for 0.0.0.0 at 2009-07-03 22:05:21) [GET]
+  Parameters: {"id"=>"37"}
+Rendering template within layouts/designs
+Rendering designs/edit
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/designs/37/edit]
+
+
+Processing DesignsController#new (for 0.0.0.0 at 2009-07-03 22:05:22) [GET]
+Rendering template within layouts/designs
+Rendering designs/new
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/designs/new]
+
+
+Processing DesignsController#show (for 0.0.0.0 at 2009-07-03 22:05:22) [GET]
+  Parameters: {"id"=>"37"}
+Rendering template within layouts/designs
+Rendering designs/show
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/designs/37]
+
+
+Processing DesignsController#index (for 0.0.0.0 at 2009-07-03 22:05:22) [GET]
+Rendering template within layouts/designs
+Rendering designs/index
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/designs]
+Rendering designs/edit.html.erb
+  [4;36;1mDesign Create (0.7ms)[0m   [0;1mINSERT INTO "designs" ("name", "updated_at", "type", "created_at") VALUES(NULL, '2009-07-04 05:05:22', NULL, '2009-07-04 05:05:22')[0m
+Rendering designs/index.html.erb
+Rendering designs/new.html.erb
+Rendering designs/show.html.erb
+Rendering slots/edit.html.erb
+
+
+Processing SlotsController#destroy (for 0.0.0.0 at 2009-07-03 22:05:22) [DELETE]
+  Parameters: {"id"=>"37"}
+Redirected to http://test.host/slots
+Completed in 6ms (DB: 0) | 302 Found [http://test.host/slots/37]
+
+
+Processing SlotsController#destroy (for 0.0.0.0 at 2009-07-03 22:05:22) [DELETE]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/slots
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/slots/1]
+
+
+Processing SlotsController#update (for 0.0.0.0 at 2009-07-03 22:05:22) [PUT]
+  Parameters: {"id"=>"37", "slot"=>{"these"=>"params"}}
+Rendering template within layouts/slots
+Rendering slots/edit
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://test.host/slots/37?slot%5Bthese%5D=params]
+
+
+Processing SlotsController#update (for 0.0.0.0 at 2009-07-03 22:05:22) [PUT]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/slots
+Rendering slots/edit
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/slots/1]
+
+
+Processing SlotsController#update (for 0.0.0.0 at 2009-07-03 22:05:22) [PUT]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/slots
+Rendering slots/edit
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/slots/1]
+
+
+Processing SlotsController#update (for 0.0.0.0 at 2009-07-03 22:05:22) [PUT]
+  Parameters: {"id"=>"37", "slot"=>{"these"=>"params"}}
+Rendering template within layouts/slots
+Rendering slots/edit
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/slots/37?slot%5Bthese%5D=params]
+
+
+Processing SlotsController#update (for 0.0.0.0 at 2009-07-03 22:05:22) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to #[Slot:0x121761c @name="Slot_1029"]
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/slots/1]
+
+
+Processing SlotsController#update (for 0.0.0.0 at 2009-07-03 22:05:22) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to #[Slot:0x11ef78e @name="Slot_1030"]
+Completed in 3ms (DB: 0) | 302 Found [http://test.host/slots/1]
+
+
+Processing SlotsController#create (for 0.0.0.0 at 2009-07-03 22:05:22) [POST]
+  Parameters: {"slot"=>{"these"=>"params"}}
+Rendering template within layouts/slots
+Rendering slots/new
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/slots?slot%5Bthese%5D=params]
+
+
+Processing SlotsController#create (for 0.0.0.0 at 2009-07-03 22:05:22) [POST]
+  Parameters: {"slot"=>{}}
+Rendering template within layouts/slots
+Rendering slots/new
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/slots?]
+
+
+Processing SlotsController#create (for 0.0.0.0 at 2009-07-03 22:05:22) [POST]
+  Parameters: {"slot"=>{"these"=>"params"}}
+Redirected to #[Slot:0x1150698 @name="Slot_1033"]
+Completed in 3ms (DB: 0) | 302 Found [http://test.host/slots?slot%5Bthese%5D=params]
+
+
+Processing SlotsController#create (for 0.0.0.0 at 2009-07-03 22:05:22) [POST]
+  Parameters: {"slot"=>{}}
+Redirected to #[Slot:0x1138278 @name="Slot_1034"]
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/slots?]
+
+
+Processing SlotsController#edit (for 0.0.0.0 at 2009-07-03 22:05:22) [GET]
+  Parameters: {"id"=>"37"}
+Rendering template within layouts/slots
+Rendering slots/edit
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/slots/37/edit]
+
+
+Processing SlotsController#new (for 0.0.0.0 at 2009-07-03 22:05:22) [GET]
+Rendering template within layouts/slots
+Rendering slots/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/slots/new]
+
+
+Processing SlotsController#show (for 0.0.0.0 at 2009-07-03 22:05:22) [GET]
+  Parameters: {"id"=>"37"}
+Rendering template within layouts/slots
+Rendering slots/show
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/slots/37]
+
+
+Processing SlotsController#index (for 0.0.0.0 at 2009-07-03 22:05:22) [GET]
+Rendering template within layouts/slots
+Rendering slots/index
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/slots]
+Rendering slots/index.html.erb
+Rendering slots/new.html.erb
+Rendering slots/show.html.erb
+Rendering contents/index.html.erb
+
+
+Processing ContentsController#destroy (for 0.0.0.0 at 2009-07-03 22:05:22) [DELETE]
+  Parameters: {"id"=>"37"}
+Redirected to http://test.host/contents
+Completed in 5ms (DB: 0) | 302 Found [http://test.host/contents/37]
+
+
+Processing ContentsController#destroy (for 0.0.0.0 at 2009-07-03 22:05:22) [DELETE]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/contents
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/contents/1]
+
+
+Processing ContentsController#update (for 0.0.0.0 at 2009-07-03 22:05:22) [PUT]
+  Parameters: {"id"=>"37", "content"=>{"these"=>"params"}}
+Rendering template within layouts/contents
+Rendering contents/edit
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/contents/37?content%5Bthese%5D=params]
+
+
+Processing ContentsController#update (for 0.0.0.0 at 2009-07-03 22:05:22) [PUT]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/contents
+Rendering contents/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/contents/1]
+
+
+Processing ContentsController#update (for 0.0.0.0 at 2009-07-03 22:05:22) [PUT]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/contents
+Rendering contents/edit
+Completed in 4ms (View: 1, DB: 0) | 200 OK [http://test.host/contents/1]
+
+
+Processing ContentsController#update (for 0.0.0.0 at 2009-07-03 22:05:22) [PUT]
+  Parameters: {"id"=>"37", "content"=>{"these"=>"params"}}
+Rendering template within layouts/contents
+Rendering contents/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/contents/37?content%5Bthese%5D=params]
+
+
+Processing ContentsController#update (for 0.0.0.0 at 2009-07-03 22:05:22) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to #[Content:0x1043160 @name="Content_1051"]
+Completed in 4ms (DB: 0) | 302 Found [http://test.host/contents/1]
+
+
+Processing ContentsController#update (for 0.0.0.0 at 2009-07-03 22:05:22) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to #[Content:0x103cb12 @name="Content_1052"]
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/contents/1]
+
+
+Processing ContentsController#create (for 0.0.0.0 at 2009-07-03 22:05:22) [POST]
+  Parameters: {"content"=>{"these"=>"params"}}
+Rendering template within layouts/contents
+Rendering contents/new
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/contents?content%5Bthese%5D=params]
+
+
+Processing ContentsController#create (for 0.0.0.0 at 2009-07-03 22:05:22) [POST]
+  Parameters: {"content"=>{}}
+Rendering template within layouts/contents
+Rendering contents/new
+Completed in 4ms (View: 1, DB: 0) | 200 OK [http://test.host/contents?]
+
+
+Processing ContentsController#create (for 0.0.0.0 at 2009-07-03 22:05:22) [POST]
+  Parameters: {"content"=>{"these"=>"params"}}
+Redirected to #[Content:0x102a246 @name="Content_1055"]
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/contents?content%5Bthese%5D=params]
+
+
+Processing ContentsController#create (for 0.0.0.0 at 2009-07-03 22:05:22) [POST]
+  Parameters: {"content"=>{}}
+Redirected to #[Content:0x1023b26 @name="Content_1056"]
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/contents?]
+
+
+Processing ContentsController#edit (for 0.0.0.0 at 2009-07-03 22:05:22) [GET]
+  Parameters: {"id"=>"37"}
+Rendering template within layouts/contents
+Rendering contents/edit
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/contents/37/edit]
+
+
+Processing ContentsController#new (for 0.0.0.0 at 2009-07-03 22:05:22) [GET]
+Rendering template within layouts/contents
+Rendering contents/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/contents/new]
+
+
+Processing ContentsController#show (for 0.0.0.0 at 2009-07-03 22:05:22) [GET]
+  Parameters: {"id"=>"37"}
+Rendering template within layouts/contents
+Rendering contents/show
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/contents/37]
+
+
+Processing ContentsController#index (for 0.0.0.0 at 2009-07-03 22:05:22) [GET]
+Rendering template within layouts/contents
+Rendering contents/index
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/contents]
+Rendering contents/new.html.erb
+Rendering contents/show.html.erb
+Rendering contents/edit.html.erb
+  [4;35;1mContent Create (0.6ms)[0m   [0mINSERT INTO "contents" ("updated_at", "type", "created_at") VALUES('2009-07-04 05:05:22', NULL, '2009-07-04 05:05:22')[0m
+
+
+Processing SlotContentsController#destroy (for 0.0.0.0 at 2009-07-03 22:05:22) [DELETE]
+  Parameters: {"id"=>"37"}
+Redirected to http://test.host/slot_contents
+Completed in 8ms (DB: 1) | 302 Found [http://test.host/slot_contents/37]
+
+
+Processing SlotContentsController#destroy (for 0.0.0.0 at 2009-07-03 22:05:22) [DELETE]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/slot_contents
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/slot_contents/1]
+
+
+Processing SlotContentsController#update (for 0.0.0.0 at 2009-07-03 22:05:22) [PUT]
+  Parameters: {"slot_content"=>{"these"=>"params"}, "id"=>"37"}
+Rendering template within layouts/slot_contents
+Rendering slot_contents/edit
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/slot_contents/37?slot_content%5Bthese%5D=params]
+
+
+Processing SlotContentsController#update (for 0.0.0.0 at 2009-07-03 22:05:22) [PUT]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/slot_contents
+Rendering slot_contents/edit
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/slot_contents/1]
+
+
+Processing SlotContentsController#update (for 0.0.0.0 at 2009-07-03 22:05:22) [PUT]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/slot_contents
+Rendering slot_contents/edit
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/slot_contents/1]
+
+
+Processing SlotContentsController#update (for 0.0.0.0 at 2009-07-03 22:05:22) [PUT]
+  Parameters: {"slot_content"=>{"these"=>"params"}, "id"=>"37"}
+Rendering template within layouts/slot_contents
+Rendering slot_contents/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/slot_contents/37?slot_content%5Bthese%5D=params]
+
+
+Processing SlotContentsController#update (for 0.0.0.0 at 2009-07-03 22:05:22) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to #[SlotContent:0xfbce62 @name="SlotContent_1070"]
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/slot_contents/1]
+
+
+Processing SlotContentsController#update (for 0.0.0.0 at 2009-07-03 22:05:22) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to #[SlotContent:0xfb6652 @name="SlotContent_1071"]
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/slot_contents/1]
+
+
+Processing SlotContentsController#create (for 0.0.0.0 at 2009-07-03 22:05:22) [POST]
+  Parameters: {"slot_content"=>{"these"=>"params"}}
+Rendering template within layouts/slot_contents
+Rendering slot_contents/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/slot_contents?slot_content%5Bthese%5D=params]
+
+
+Processing SlotContentsController#create (for 0.0.0.0 at 2009-07-03 22:05:22) [POST]
+  Parameters: {"slot_content"=>{}}
+Rendering template within layouts/slot_contents
+Rendering slot_contents/new
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/slot_contents?]
+
+
+Processing SlotContentsController#create (for 0.0.0.0 at 2009-07-03 22:05:22) [POST]
+  Parameters: {"slot_content"=>{"these"=>"params"}}
+Redirected to #[SlotContent:0xfa3eda @name="SlotContent_1074"]
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/slot_contents?slot_content%5Bthese%5D=params]
+
+
+Processing SlotContentsController#create (for 0.0.0.0 at 2009-07-03 22:05:22) [POST]
+  Parameters: {"slot_content"=>{}}
+Redirected to #[SlotContent:0xf9d7e2 @name="SlotContent_1075"]
+Completed in 9ms (DB: 0) | 302 Found [http://test.host/slot_contents?]
+
+
+Processing SlotContentsController#edit (for 0.0.0.0 at 2009-07-03 22:05:22) [GET]
+  Parameters: {"id"=>"37"}
+Rendering template within layouts/slot_contents
+Rendering slot_contents/edit
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/slot_contents/37/edit]
+
+
+Processing SlotContentsController#new (for 0.0.0.0 at 2009-07-03 22:05:22) [GET]
+Rendering template within layouts/slot_contents
+Rendering slot_contents/new
+Completed in 7ms (View: 1, DB: 0) | 200 OK [http://test.host/slot_contents/new]
+
+
+Processing SlotContentsController#show (for 0.0.0.0 at 2009-07-03 22:05:22) [GET]
+  Parameters: {"id"=>"37"}
+Rendering template within layouts/slot_contents
+Rendering slot_contents/show
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/slot_contents/37]
+
+
+Processing SlotContentsController#index (for 0.0.0.0 at 2009-07-03 22:05:22) [GET]
+Rendering template within layouts/slot_contents
+Rendering slot_contents/index
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://test.host/slot_contents]
+Rendering slot_contents/show.html.erb
+Rendering slot_contents/new.html.erb
+Rendering slot_contents/index.html.erb
+Rendering slot_contents/edit.html.erb
+  [4;36;1mSlot Create (2.8ms)[0m   [0;1mINSERT INTO "slots" ("name", "updated_at", "created_at") VALUES(NULL, '2009-07-04 05:05:23', '2009-07-04 05:05:23')[0m
+  [4;35;1mContent Create (0.3ms)[0m   [0mINSERT INTO "contents" ("updated_at", "type", "created_at") VALUES('2009-07-04 05:05:23', NULL, '2009-07-04 05:05:23')[0m
+  [4;36;1mSlotContent Create (0.3ms)[0m   [0;1mINSERT INTO "slot_contents" ("updated_at", "slot_id", "slot_item_type", "slot_item_id", "created_at") VALUES('2009-07-04 05:05:23', 1, 'Content', 1, '2009-07-04 05:05:23')[0m
+  [4;35;1mSlot Create (0.5ms)[0m   [0mINSERT INTO "slots" ("name", "updated_at", "created_at") VALUES(NULL, '2009-07-04 05:05:23', '2009-07-04 05:05:23')[0m
+  [4;36;1mDesign Create (0.2ms)[0m   [0;1mINSERT INTO "designs" ("name", "updated_at", "type", "created_at") VALUES(NULL, '2009-07-04 05:05:23', NULL, '2009-07-04 05:05:23')[0m
+  [4;35;1mSlotContent Create (0.6ms)[0m   [0mINSERT INTO "slot_contents" ("updated_at", "slot_id", "slot_item_type", "slot_item_id", "created_at") VALUES('2009-07-04 05:05:23', 1, 'Design', 1, '2009-07-04 05:05:23')[0m
+  [4;36;1mContent Create (0.2ms)[0m   [0;1mINSERT INTO "contents" ("updated_at", "type", "created_at") VALUES('2009-07-04 05:05:23', NULL, '2009-07-04 05:05:23')[0m
+  [4;35;1mSlotContent Create (0.2ms)[0m   [0mINSERT INTO "slot_contents" ("updated_at", "slot_id", "slot_item_type", "slot_item_id", "created_at") VALUES('2009-07-04 05:05:23', 1, 'Content', 1, '2009-07-04 05:05:23')[0m
+  [4;36;1mSlotContent Load (1.7ms)[0m   [0;1mSELECT 'Slot' AS polymorphic_parent_class, 'slot_items' AS polymorphic_association_id, contents.created_at AS t0_r2, contents.id AS t0_r0, contents.type AS t0_r1, contents.updated_at AS t0_r3, designs.created_at AS t1_r3, designs.id AS t1_r0, designs.name AS t1_r2, designs.type AS t1_r1, designs.updated_at AS t1_r4, slot_contents.created_at AS t2_r4, slot_contents.id AS t2_r0, slot_contents.slot_id AS t2_r1, slot_contents.slot_item_id AS t2_r2, slot_contents.slot_item_type AS t2_r3, slot_contents.updated_at AS t2_r5 FROM "slot_contents" JOIN "slots" AS polymorphic_parent ON "slot_contents".slot_id = polymorphic_parent.id LEFT JOIN "designs" ON "slot_contents".slot_item_id = "designs".id AND "slot_contents".slot_item_type = 'Design' LEFT JOIN "contents" ON "slot_contents".slot_item_id = "contents".id AND "slot_contents".slot_item_type = 'Content' WHERE (("slot_contents".slot_id = 1)) [0m
+  [4;35;1mSlot Create (0.6ms)[0m   [0mINSERT INTO "slots" ("name", "updated_at", "created_at") VALUES(NULL, '2009-07-04 05:05:23', '2009-07-04 05:05:23')[0m
+  [4;36;1mDesign Create (0.2ms)[0m   [0;1mINSERT INTO "designs" ("name", "updated_at", "type", "created_at") VALUES(NULL, '2009-07-04 05:05:23', 'DesignTypeA', '2009-07-04 05:05:23')[0m
+  [4;35;1mSlotContent Create (0.3ms)[0m   [0mINSERT INTO "slot_contents" ("updated_at", "slot_id", "slot_item_type", "slot_item_id", "created_at") VALUES('2009-07-04 05:05:23', 1, 'Design', 1, '2009-07-04 05:05:23')[0m
+  [4;36;1mDesign Create (0.2ms)[0m   [0;1mINSERT INTO "designs" ("name", "updated_at", "type", "created_at") VALUES(NULL, '2009-07-04 05:05:23', 'DesignTypeB', '2009-07-04 05:05:23')[0m
+  [4;35;1mSlotContent Create (0.2ms)[0m   [0mINSERT INTO "slot_contents" ("updated_at", "slot_id", "slot_item_type", "slot_item_id", "created_at") VALUES('2009-07-04 05:05:23', 1, 'Design', 2, '2009-07-04 05:05:23')[0m
+  [4;36;1mSlotContent Load (1.2ms)[0m   [0;1mSELECT 'Slot' AS polymorphic_parent_class, 'slot_items' AS polymorphic_association_id, contents.created_at AS t0_r2, contents.id AS t0_r0, contents.type AS t0_r1, contents.updated_at AS t0_r3, designs.created_at AS t1_r3, designs.id AS t1_r0, designs.name AS t1_r2, designs.type AS t1_r1, designs.updated_at AS t1_r4, slot_contents.created_at AS t2_r4, slot_contents.id AS t2_r0, slot_contents.slot_id AS t2_r1, slot_contents.slot_item_id AS t2_r2, slot_contents.slot_item_type AS t2_r3, slot_contents.updated_at AS t2_r5 FROM "slot_contents" JOIN "slots" AS polymorphic_parent ON "slot_contents".slot_id = polymorphic_parent.id LEFT JOIN "designs" ON "slot_contents".slot_item_id = "designs".id AND "slot_contents".slot_item_type = 'Design' LEFT JOIN "contents" ON "slot_contents".slot_item_id = "contents".id AND "slot_contents".slot_item_type = 'Content' WHERE (("slot_contents".slot_id = 1)) [0m
+  [4;35;1mSlot Create (1.0ms)[0m   [0mINSERT INTO "slots" ("name", "updated_at", "created_at") VALUES(NULL, '2009-07-04 05:05:23', '2009-07-04 05:05:23')[0m
+  [4;36;1mContent Create (0.5ms)[0m   [0;1mINSERT INTO "contents" ("updated_at", "type", "created_at") VALUES('2009-07-04 05:05:23', 'ContentA', '2009-07-04 05:05:23')[0m
+  [4;35;1mSlotContent Create (0.2ms)[0m   [0mINSERT INTO "slot_contents" ("updated_at", "slot_id", "slot_item_type", "slot_item_id", "created_at") VALUES('2009-07-04 05:05:23', 1, 'Content', 1, '2009-07-04 05:05:23')[0m
+  [4;36;1mContent Create (0.2ms)[0m   [0;1mINSERT INTO "contents" ("updated_at", "type", "created_at") VALUES('2009-07-04 05:05:23', 'ContentB', '2009-07-04 05:05:23')[0m
+  [4;35;1mSlotContent Create (0.2ms)[0m   [0mINSERT INTO "slot_contents" ("updated_at", "slot_id", "slot_item_type", "slot_item_id", "created_at") VALUES('2009-07-04 05:05:23', 1, 'Content', 2, '2009-07-04 05:05:23')[0m
+  [4;36;1mSlotContent Load (2.1ms)[0m   [0;1mSELECT 'Slot' AS polymorphic_parent_class, 'slot_items' AS polymorphic_association_id, contents.created_at AS t0_r2, contents.id AS t0_r0, contents.type AS t0_r1, contents.updated_at AS t0_r3, designs.created_at AS t1_r3, designs.id AS t1_r0, designs.name AS t1_r2, designs.type AS t1_r1, designs.updated_at AS t1_r4, slot_contents.created_at AS t2_r4, slot_contents.id AS t2_r0, slot_contents.slot_id AS t2_r1, slot_contents.slot_item_id AS t2_r2, slot_contents.slot_item_type AS t2_r3, slot_contents.updated_at AS t2_r5 FROM "slot_contents" JOIN "slots" AS polymorphic_parent ON "slot_contents".slot_id = polymorphic_parent.id LEFT JOIN "designs" ON "slot_contents".slot_item_id = "designs".id AND "slot_contents".slot_item_type = 'Design' LEFT JOIN "contents" ON "slot_contents".slot_item_id = "contents".id AND "slot_contents".slot_item_type = 'Content' WHERE (("slot_contents".slot_id = 1)) [0m
+  [4;35;1mSlot Create (0.6ms)[0m   [0mINSERT INTO "slots" ("name", "updated_at", "created_at") VALUES(NULL, '2009-07-04 05:05:23', '2009-07-04 05:05:23')[0m
+  [4;36;1mContent Create (0.3ms)[0m   [0;1mINSERT INTO "contents" ("updated_at", "type", "created_at") VALUES('2009-07-04 05:05:23', 'ContentA', '2009-07-04 05:05:23')[0m
+  [4;35;1mSlotContent Create (0.3ms)[0m   [0mINSERT INTO "slot_contents" ("updated_at", "slot_id", "slot_item_type", "slot_item_id", "created_at") VALUES('2009-07-04 05:05:23', 1, 'Content', 1, '2009-07-04 05:05:23')[0m
+  [4;36;1mContent Create (0.2ms)[0m   [0;1mINSERT INTO "contents" ("updated_at", "type", "created_at") VALUES('2009-07-04 05:05:23', 'ContentB', '2009-07-04 05:05:23')[0m
+  [4;35;1mSlotContent Create (0.2ms)[0m   [0mINSERT INTO "slot_contents" ("updated_at", "slot_id", "slot_item_type", "slot_item_id", "created_at") VALUES('2009-07-04 05:05:23', 1, 'Content', 2, '2009-07-04 05:05:23')[0m
+  [4;36;1mDesign Create (0.3ms)[0m   [0;1mINSERT INTO "designs" ("name", "updated_at", "type", "created_at") VALUES(NULL, '2009-07-04 05:05:23', 'DesignTypeA', '2009-07-04 05:05:23')[0m
+  [4;35;1mSlotContent Create (0.2ms)[0m   [0mINSERT INTO "slot_contents" ("updated_at", "slot_id", "slot_item_type", "slot_item_id", "created_at") VALUES('2009-07-04 05:05:23', 1, 'Design', 1, '2009-07-04 05:05:23')[0m
+  [4;36;1mDesign Create (0.2ms)[0m   [0;1mINSERT INTO "designs" ("name", "updated_at", "type", "created_at") VALUES(NULL, '2009-07-04 05:05:23', 'DesignTypeB', '2009-07-04 05:05:23')[0m
+  [4;35;1mSlotContent Create (0.2ms)[0m   [0mINSERT INTO "slot_contents" ("updated_at", "slot_id", "slot_item_type", "slot_item_id", "created_at") VALUES('2009-07-04 05:05:23', 1, 'Design', 2, '2009-07-04 05:05:23')[0m
+  [4;36;1mSlotContent Load (1.5ms)[0m   [0;1mSELECT 'Slot' AS polymorphic_parent_class, 'slot_items' AS polymorphic_association_id, contents.created_at AS t0_r2, contents.id AS t0_r0, contents.type AS t0_r1, contents.updated_at AS t0_r3, designs.created_at AS t1_r3, designs.id AS t1_r0, designs.name AS t1_r2, designs.type AS t1_r1, designs.updated_at AS t1_r4, slot_contents.created_at AS t2_r4, slot_contents.id AS t2_r0, slot_contents.slot_id AS t2_r1, slot_contents.slot_item_id AS t2_r2, slot_contents.slot_item_type AS t2_r3, slot_contents.updated_at AS t2_r5 FROM "slot_contents" JOIN "slots" AS polymorphic_parent ON "slot_contents".slot_id = polymorphic_parent.id LEFT JOIN "designs" ON "slot_contents".slot_item_id = "designs".id AND "slot_contents".slot_item_type = 'Design' LEFT JOIN "contents" ON "slot_contents".slot_item_id = "contents".id AND "slot_contents".slot_item_type = 'Content' WHERE (("slot_contents".slot_id = 1)) [0m
+  [4;35;1mSlot Create (0.6ms)[0m   [0mINSERT INTO "slots" ("name", "updated_at", "created_at") VALUES(NULL, '2009-07-04 05:05:23', '2009-07-04 05:05:23')[0m
+  [4;36;1mSlot Create (0.5ms)[0m   [0;1mINSERT INTO "slots" ("name", "updated_at", "created_at") VALUES(NULL, '2009-07-04 05:05:23', '2009-07-04 05:05:23')[0m
+  [4;35;1mContent Create (0.3ms)[0m   [0mINSERT INTO "contents" ("updated_at", "type", "created_at") VALUES('2009-07-04 05:05:23', 'ContentA', '2009-07-04 05:05:23')[0m
+** has_many_polymorphs: Loading instances for polymorphic duplicate push check; use :skip_duplicates => false and perhaps a database constraint to avoid this possible performance issue
+  [4;36;1mSlotContent Load (0.3ms)[0m   [0;1mSELECT 'Slot' AS polymorphic_parent_class, 'slot_items' AS polymorphic_association_id, contents.created_at AS t0_r2, contents.id AS t0_r0, contents.type AS t0_r1, contents.updated_at AS t0_r3, designs.created_at AS t1_r3, designs.id AS t1_r0, designs.name AS t1_r2, designs.type AS t1_r1, designs.updated_at AS t1_r4, slot_contents.created_at AS t2_r4, slot_contents.id AS t2_r0, slot_contents.slot_id AS t2_r1, slot_contents.slot_item_id AS t2_r2, slot_contents.slot_item_type AS t2_r3, slot_contents.updated_at AS t2_r5 FROM "slot_contents" JOIN "slots" AS polymorphic_parent ON "slot_contents".slot_id = polymorphic_parent.id LEFT JOIN "designs" ON "slot_contents".slot_item_id = "designs".id AND "slot_contents".slot_item_type = 'Design' LEFT JOIN "contents" ON "slot_contents".slot_item_id = "contents".id AND "slot_contents".slot_item_type = 'Content' WHERE (("slot_contents".slot_id = 1)) [0m
+  [4;35;1mSlotContent Create (0.2ms)[0m   [0mINSERT INTO "slot_contents" ("updated_at", "slot_id", "slot_item_type", "slot_item_id", "created_at") VALUES('2009-07-04 05:05:23', 1, 'Content', 1, '2009-07-04 05:05:23')[0m
+  [4;36;1mContent Create (0.2ms)[0m   [0;1mINSERT INTO "contents" ("updated_at", "type", "created_at") VALUES('2009-07-04 05:05:23', 'ContentB', '2009-07-04 05:05:23')[0m
+** has_many_polymorphs: Loading instances for polymorphic duplicate push check; use :skip_duplicates => false and perhaps a database constraint to avoid this possible performance issue
+  [4;35;1mSlotContent Create (0.1ms)[0m   [0mINSERT INTO "slot_contents" ("updated_at", "slot_id", "slot_item_type", "slot_item_id", "created_at") VALUES('2009-07-04 05:05:23', 1, 'Content', 2, '2009-07-04 05:05:23')[0m
+  [4;36;1mDesign Create (0.2ms)[0m   [0;1mINSERT INTO "designs" ("name", "updated_at", "type", "created_at") VALUES(NULL, '2009-07-04 05:05:23', 'DesignTypeA', '2009-07-04 05:05:23')[0m
+** has_many_polymorphs: Loading instances for polymorphic duplicate push check; use :skip_duplicates => false and perhaps a database constraint to avoid this possible performance issue
+  [4;35;1mSlotContent Create (0.1ms)[0m   [0mINSERT INTO "slot_contents" ("updated_at", "slot_id", "slot_item_type", "slot_item_id", "created_at") VALUES('2009-07-04 05:05:23', 1, 'Design', 1, '2009-07-04 05:05:23')[0m
+  [4;36;1mDesign Create (0.2ms)[0m   [0;1mINSERT INTO "designs" ("name", "updated_at", "type", "created_at") VALUES(NULL, '2009-07-04 05:05:23', 'DesignTypeB', '2009-07-04 05:05:23')[0m
+** has_many_polymorphs: Loading instances for polymorphic duplicate push check; use :skip_duplicates => false and perhaps a database constraint to avoid this possible performance issue
+  [4;35;1mSlotContent Create (0.1ms)[0m   [0mINSERT INTO "slot_contents" ("updated_at", "slot_id", "slot_item_type", "slot_item_id", "created_at") VALUES('2009-07-04 05:05:23', 1, 'Design', 2, '2009-07-04 05:05:23')[0m
+  [4;36;1mSlotContent Load (1.8ms)[0m   [0;1mSELECT 'Slot' AS polymorphic_parent_class, 'slot_items' AS polymorphic_association_id, contents.created_at AS t0_r2, contents.id AS t0_r0, contents.type AS t0_r1, contents.updated_at AS t0_r3, designs.created_at AS t1_r3, designs.id AS t1_r0, designs.name AS t1_r2, designs.type AS t1_r1, designs.updated_at AS t1_r4, slot_contents.created_at AS t2_r4, slot_contents.id AS t2_r0, slot_contents.slot_id AS t2_r1, slot_contents.slot_item_id AS t2_r2, slot_contents.slot_item_type AS t2_r3, slot_contents.updated_at AS t2_r5 FROM "slot_contents" JOIN "slots" AS polymorphic_parent ON "slot_contents".slot_id = polymorphic_parent.id LEFT JOIN "designs" ON "slot_contents".slot_item_id = "designs".id AND "slot_contents".slot_item_type = 'Design' LEFT JOIN "contents" ON "slot_contents".slot_item_id = "contents".id AND "slot_contents".slot_item_type = 'Content' WHERE (("slot_contents".slot_id = 1)) [0m

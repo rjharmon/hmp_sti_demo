@@ -1,0 +1,2 @@
+module SlotContentsHelper
+end

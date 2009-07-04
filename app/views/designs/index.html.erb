@@ -1,0 +1,18 @@
+<h1>Listing designs</h1>
+
+<table>
+  <tr>
+  </tr>
+
+<% for design in @designs %>
+  <tr>
+    <td><%= link_to 'Show', design %></td>
+    <td><%= link_to 'Edit', edit_design_path(design) %></td>
+    <td><%= link_to 'Destroy', design, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New design', new_design_path %>

@@ -1,0 +1,12 @@
+<h1>Editing design</h1>
+
+<% form_for(@design) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.submit "Update" %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @design %> |
+<%= link_to 'Back', designs_path %>

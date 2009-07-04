@@ -1,0 +1,12 @@
+<h1>Editing slot_content</h1>
+
+<% form_for(@slot_content) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.submit "Update" %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @slot_content %> |
+<%= link_to 'Back', slot_contents_path %>
